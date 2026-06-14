@@ -541,11 +541,69 @@ const orbitData = {
 };
 
 const recommendationData = {
-  edu: ["Direction A", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  nature: ["Direction B", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  biz: ["Direction C", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  slow: ["Direction D", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  culture: ["Direction E", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"]
+  edu: {
+    title: "Direction A",
+    copy: "客群明確、決策痛點強，適合以顧問式服務測試第一波市場反應。",
+    score: 86,
+    color: "#4f8fd7",
+    values: [92, 88, 72, 84, 68, 80]
+  },
+  nature: {
+    title: "Direction B",
+    copy: "高端休息需求具備情緒張力，適合用自然場景與服務節奏建立差異。",
+    score: 82,
+    color: "#4d9b70",
+    values: [86, 76, 82, 78, 74, 72]
+  },
+  biz: {
+    title: "Direction C",
+    copy: "客單價與 B2B 延伸潛力高，適合搭配 MICE 與企業客製資源測試。",
+    score: 84,
+    color: "#8062c8",
+    values: [78, 82, 86, 88, 90, 76]
+  },
+  slow: {
+    title: "Direction D",
+    copy: "服務價值清楚，適合以低壓節奏、中文支援與安心感建立信任。",
+    score: 79,
+    color: "#d0ad6b",
+    values: [74, 80, 70, 86, 78, 66]
+  },
+  culture: {
+    title: "Direction E",
+    copy: "社群分享性高，適合做內容導流與城市體驗包裝，但需要更強票券整合。",
+    score: 77,
+    color: "#b84f66",
+    values: [80, 70, 84, 62, 66, 82]
+  }
+};
+
+const orgData = {
+  inbound: {
+    kicker: "Inbound Layer",
+    title: "美加在地接待",
+    copy: "承接來到美國與加拿大的旅客，整合交通、住宿、導覽、票券、在地行程與團體接待。",
+    tags: ["Coach Fleet", "Local Tours", "Reception SOP"]
+  },
+  platform: {
+    kicker: "Platform Core",
+    title: "北美市場平台",
+    copy: "把在地服務、全球供應鏈、顧問式銷售與跨時區支援，轉化成北美市場能理解的旅遊入口。",
+    tags: ["Market Translation", "Service Design", "Global Network"]
+  },
+  outbound: {
+    kicker: "Outbound Layer",
+    title: "北美客源開發",
+    copy: "主動開發北美當地華人、亞裔、英文主流與西語市場，把全球旅遊資源重新包裝給北美消費者。",
+    tags: ["Source Market", "Advisory Sales", "Product Language"]
+  }
+};
+
+const quizData = {
+  edu: ["Direction A", "以家庭決策、教育想像與高信任服務作為第一波測試入口。"],
+  nature: ["Direction B", "以自然場景、慢節奏與高端休息感創造最直覺的旅遊理由。"],
+  biz: ["Direction C", "以企業客製、MICE 與商務參訪建立高客單價的成長路徑。"],
+  culture: ["Direction E", "以城市文化、票券整合與社群分享感打開年輕市場入口。"]
 };
 
 const root = document.documentElement;
@@ -554,6 +612,7 @@ const coldOpen = document.querySelector("#cold-open");
 const enterSite = document.querySelector("#enter-site");
 const skipIntro = document.querySelector("#skip-intro");
 const musicToggle = document.querySelector("#music-toggle");
+const backgroundTrack = document.querySelector("#background-track");
 const languageButtons = document.querySelectorAll("[data-lang]");
 let activeLang = localStorage.getItem("travelProposalLang") || "zh";
 let audioContext;
@@ -579,6 +638,56 @@ function updateOrbit(key) {
   document.querySelector("#orbit-title").textContent = data[1];
   document.querySelector("#orbit-text").textContent = data[2];
   document.querySelectorAll(".orbit").forEach((button) => button.classList.toggle("active", button.dataset.orbit === key));
+  document.querySelector(".orbit-system")?.setAttribute("data-active-orbit", key);
+}
+
+function radarPoints(values) {
+  const center = 160;
+  const maxRadius = 120;
+  return values.map((value, index) => {
+    const angle = -Math.PI / 2 + index * (Math.PI * 2 / values.length);
+    const radius = maxRadius * value / 100;
+    const x = center + Math.cos(angle) * radius;
+    const y = center + Math.sin(angle) * radius;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+}
+
+function updateRecommendation(key) {
+  const data = recommendationData[key];
+  if (!data) return;
+  document.querySelectorAll(".collection-tabs button").forEach((item) => item.classList.toggle("active", item.dataset.concept === key));
+  const card = document.querySelector(".radar-card");
+  if (card) {
+    card.dataset.activeConcept = key;
+    card.style.setProperty("--accent", data.color);
+  }
+  const shape = document.querySelector("#radar-shape");
+  if (shape) shape.setAttribute("points", radarPoints(data.values));
+  document.querySelector("#recommendation-title").textContent = data.title;
+  document.querySelector("#recommendation-copy").textContent = data.copy;
+  document.querySelector("#recommendation-score").textContent = `Recommendation Index ${data.score}`;
+}
+
+function updateOrg(key) {
+  const data = orgData[key];
+  if (!data) return;
+  document.querySelectorAll(".org-node").forEach((node) => node.classList.toggle("active", node.dataset.org === key));
+  document.querySelector("#org-kicker").textContent = data.kicker;
+  document.querySelector("#org-title").textContent = data.title;
+  document.querySelector("#org-copy").textContent = data.copy;
+  document.querySelector("#org-tags").innerHTML = data.tags.map((tag) => `<b>${tag}</b>`).join("");
+}
+
+function updateBusinessConsole() {
+  const travelers = Number(document.querySelector("#traveler-count")?.value || 24);
+  const days = Number(document.querySelector("#travel-days")?.value || 7);
+  const revenue = Math.round(travelers * days * 510);
+  const margin = Math.min(38, Math.round(21 + travelers / 5 + (days - 4) * 0.8));
+  const leads = Math.round(travelers * 1.35 + days * 1.5);
+  document.querySelector("#kpi-revenue").textContent = `$${Math.round(revenue / 1000)}K`;
+  document.querySelector("#kpi-margin").textContent = `${margin}%`;
+  document.querySelector("#kpi-leads").textContent = leads;
 }
 
 function handleScroll() {
@@ -660,14 +769,16 @@ function createAmbientMusic() {
 
 function setMusicState(active) {
   if (!musicToggle) return;
-  if (active && !musicNodes) {
-    musicNodes = createAmbientMusic();
-    audioContext = musicNodes?.context;
+  if (backgroundTrack) {
+    backgroundTrack.volume = 0.42;
+    if (active) {
+      backgroundTrack.play().catch(() => {
+        musicToggle.querySelector("b").textContent = "Tap";
+      });
+    } else {
+      backgroundTrack.pause();
+    }
   }
-  if (!musicNodes) return;
-  if (audioContext.state === "suspended") audioContext.resume();
-  musicNodes.master.gain.cancelScheduledValues(audioContext.currentTime);
-  musicNodes.master.gain.linearRampToValueAtTime(active ? 0.22 : 0.0001, audioContext.currentTime + 0.8);
   musicToggle.classList.toggle("active", active);
   musicToggle.setAttribute("aria-pressed", active ? "true" : "false");
   musicToggle.querySelector("b").textContent = active ? "On" : "Off";
@@ -748,12 +859,29 @@ document.querySelectorAll(".map-node").forEach((node) => {
 });
 document.querySelectorAll(".orbit").forEach((button) => button.addEventListener("click", () => updateOrbit(button.dataset.orbit)));
 document.querySelectorAll(".collection-tabs button").forEach((button) => {
+  button.addEventListener("click", () => updateRecommendation(button.dataset.concept));
+});
+document.querySelectorAll(".org-node").forEach((node) => {
+  node.addEventListener("click", () => updateOrg(node.dataset.org));
+  node.addEventListener("mouseenter", () => updateOrg(node.dataset.org));
+});
+document.querySelectorAll(".product-panel button").forEach((button) => {
+  button.addEventListener("click", () => button.closest(".product-panel")?.classList.toggle("expanded"));
+});
+document.querySelectorAll(".quiz-options button").forEach((button) => {
   button.addEventListener("click", () => {
-    document.querySelectorAll(".collection-tabs button").forEach((item) => item.classList.remove("active"));
+    document.querySelectorAll(".quiz-options button").forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
-    const [title, copy] = recommendationData[button.dataset.concept];
-    document.querySelector("#recommendation-title").textContent = title;
-    document.querySelector("#recommendation-copy").textContent = copy;
+    const [title, copy] = quizData[button.dataset.quiz];
+    document.querySelector("#quiz-title").textContent = title;
+    document.querySelector("#quiz-copy").textContent = copy;
+  });
+});
+document.querySelectorAll("#traveler-count, #travel-days").forEach((input) => input.addEventListener("input", updateBusinessConsole));
+document.querySelectorAll(".team-grid article").forEach((card) => {
+  card.addEventListener("click", () => {
+    document.querySelectorAll(".team-grid article").forEach((item) => item.classList.remove("active"));
+    card.classList.add("active");
   });
 });
 
@@ -773,3 +901,5 @@ document.querySelectorAll(".reveal").forEach((node) => revealObserver.observe(no
 window.addEventListener("scroll", handleScroll, { passive: true });
 handleScroll();
 setLanguage(activeLang);
+updateRecommendation("edu");
+updateBusinessConsole();

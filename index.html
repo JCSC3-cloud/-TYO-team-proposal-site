@@ -9,10 +9,17 @@
       content="A bilingual company profile for Lion Travel North America."
     />
     <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="stylesheet" href="./styles.css?v=20260614-global-stage-system" />
+    <link rel="stylesheet" href="./styles.css?v=20260615-blue-mp3" />
   </head>
   <body>
     <div id="cold-open" class="cold-open" aria-label="Opening cinematic">
+      <div class="cold-visuals" aria-hidden="true">
+        <span class="cold-frame city"></span>
+        <span class="cold-frame nature"></span>
+        <span class="cold-frame service"></span>
+        <span class="cold-route r1"></span>
+        <span class="cold-route r2"></span>
+      </div>
       <div class="cold-lines">
         <p data-i18n="cold1">北美，不只是雄獅的一個海外據點。</p>
         <p data-i18n="cold2">它是雄獅從台灣品牌，走向全球市場時，必須重新被認識的一站。</p>
@@ -53,6 +60,7 @@
         <span>Sound</span>
         <b>Off</b>
       </button>
+      <audio id="background-track" src="./assets/audio/blue.mp3" preload="auto" loop></audio>
     </header>
 
     <main id="top">
@@ -144,6 +152,26 @@
             <figure class="consultant-service"><span>Consultant Desk</span></figure>
             <figure class="corporate-reception"><span>Cross-border Reception</span></figure>
             <figure class="airport-transfer"><span>Local Operation Flow</span></figure>
+          </div>
+          <div class="org-explorer" aria-label="Interactive Lion Travel North America role explorer">
+            <div class="org-node active" data-org="inbound">
+              <span>Inbound</span>
+              <b>Destination Service</b>
+            </div>
+            <div class="org-node center" data-org="platform">
+              <span>Core</span>
+              <b>North America Platform</b>
+            </div>
+            <div class="org-node" data-org="outbound">
+              <span>Outbound</span>
+              <b>Source Market</b>
+            </div>
+            <article class="org-detail">
+              <span id="org-kicker">Inbound Layer</span>
+              <h3 id="org-title">美加在地接待</h3>
+              <p id="org-copy">承接來到美國與加拿大的旅客，整合交通、住宿、導覽、票券、在地行程與團體接待。</p>
+              <div id="org-tags"><b>Coach Fleet</b><b>Local Tours</b><b>Reception SOP</b></div>
+            </article>
           </div>
         </div>
 
@@ -519,8 +547,9 @@
             <h2 data-i18n="universeTitle">北美，不只一種玩法；每一種玩法，都對應一種旅客理由</h2>
             <p data-i18n="universeLead">點選不同旅程篇章，右側會展開代表場景、對應客群、體驗亮點與可轉化產品。</p>
           </div>
-          <div class="orbit-system reveal">
-            <div class="map-core">[North America Collection Preview]</div>
+          <div class="orbit-system reveal" data-active-orbit="urban">
+            <div class="orbit-rings" aria-hidden="true"></div>
+            <div class="map-core">North America<br />Market Core</div>
             <span class="mood-photo p1">[City Skyline Placeholder]</span>
             <span class="mood-photo p2">[National Park Placeholder]</span>
             <span class="mood-photo p3">[University Campus Placeholder]</span>
@@ -538,6 +567,12 @@
             <p class="chapter-label" id="orbit-code">Urban Culture</p>
             <h3 id="orbit-title">城市文化</h3>
             <p id="orbit-text">[New York / LA / San Francisco / Toronto / Vancouver] · 城市文化沉浸、博物館、美食、影視、運動賽事 · [North America Market Data]</p>
+            <div class="orbit-stack">
+              <span>客群 Customer</span>
+              <span>痛點 Pain Point</span>
+              <span>體驗鉤子 Experience Hook</span>
+              <span>商業潛力 Business Potential</span>
+            </div>
           </aside>
         </div>
       </section>
@@ -574,7 +609,7 @@
           <h2 data-i18n="collectionTitle">未來產品框架</h2>
           <p data-i18n="collectionLead">先保留產品空格，後續再把市場洞察轉譯成可上架的產品方向。</p>
         </div>
-        <div class="product-rail" aria-label="Product opportunity panels">
+        <div class="product-rail flip-rail" aria-label="Product opportunity panels">
           <article class="product-panel edu reveal">
             <p>Product Direction A｜To Be Defined</p><h3 data-i18n="panelATitle">待定產品方向 A</h3><strong data-i18n="panelAPromise">給準留學生家庭的市場入口。</strong>
             <dl><dt>產品承諾</dt><dd>不是先看排名，而是讓孩子親眼走進未來生活。</dd><dt>目標客群</dt><dd>準留學生家庭、青少年、家長</dd><dt>核心痛點</dt><dd>資訊抽象、選校焦慮、自由行難規劃</dd><dt>體驗鉤子</dt><dd>大學校園參訪、城市生活體驗、博物館與 STEM 體驗</dd><dt>雄獅加值</dt><dd>中文顧問 · 教育包裝 · 家長安心 · 北美在地協調</dd><dt>商業潛力</dt><dd>[Pricing Placeholder] · [Revenue Potential Placeholder]</dd></dl>
@@ -616,15 +651,30 @@
             <button data-concept="slow">Direction D</button>
             <button data-concept="culture">Direction E</button>
           </div>
-          <div class="evaluation-card">
-            <div class="soft-chart">
-              <span></span><span></span><span></span><span></span>
-              <strong>[Evaluation Visual Placeholder]</strong>
+          <div class="evaluation-card radar-card" data-active-concept="edu">
+            <div class="radar-wrap">
+              <svg class="radar-chart" viewBox="0 0 320 320" role="img" aria-label="Interactive evaluation radar chart">
+                <polygon class="radar-grid g3" points="160,40 264,100 264,220 160,280 56,220 56,100"></polygon>
+                <polygon class="radar-grid g2" points="160,78 231,119 231,201 160,242 89,201 89,119"></polygon>
+                <polygon class="radar-grid g1" points="160,116 198,138 198,182 160,204 122,182 122,138"></polygon>
+                <line x1="160" y1="160" x2="160" y2="40"></line>
+                <line x1="160" y1="160" x2="264" y2="100"></line>
+                <line x1="160" y1="160" x2="264" y2="220"></line>
+                <line x1="160" y1="160" x2="160" y2="280"></line>
+                <line x1="160" y1="160" x2="56" y2="220"></line>
+                <line x1="160" y1="160" x2="56" y2="100"></line>
+                <polygon id="radar-shape" class="radar-shape" points="160,58 236,116 242,208 160,240 92,200 78,112"></polygon>
+                <circle id="radar-pulse" cx="160" cy="160" r="13"></circle>
+              </svg>
+              <div class="radar-labels">
+                <span>需求</span><span>清楚度</span><span>差異化</span><span>資源適配</span><span>毛利</span><span>擴張</span>
+              </div>
             </div>
             <div class="recommendation">
               <p data-i18n="recommendation">Recommended First Launch</p>
               <h3 id="recommendation-title">[Recommended Direction Placeholder]</h3>
               <p id="recommendation-copy">Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]</p>
+              <strong id="recommendation-score">Recommendation Index 86</strong>
             </div>
           </div>
           <div class="score-grid">
@@ -739,11 +789,47 @@
           <p class="chapter-label" data-i18n="businessChapter">Chapter 12｜Business Model</p>
           <h2 data-i18n="businessTitle">讓北美產品可銷售、可獲利、可複製。</h2>
         </div>
-        <div class="dashboard reveal">
-          <article><h3>Revenue</h3><p data-i18n="revenue">團費 · 加購體驗 · 企業客製 · 高端小團 · 會員回購 · 合作分潤</p></article>
-          <article><h3>Pricing / Profit</h3><p>[Price Placeholder] · [Cost Placeholder] · [Gross Margin Placeholder] · [Break-even Placeholder]</p></article>
-          <article><h3>Cost</h3><p data-i18n="cost">機票 · 住宿 · 交通 · 地接 · 體驗活動 · 導遊與領隊 · 行銷成本</p></article>
+        <div class="dashboard business-console reveal">
+          <div class="model-controls">
+            <label>Travelers <input id="traveler-count" type="range" min="12" max="48" value="24" /></label>
+            <label>Days <input id="travel-days" type="range" min="4" max="12" value="7" /></label>
+          </div>
+          <article class="cost-chart">
+            <h3>Cost Structure</h3>
+            <div class="bar-stack"><span style="--w:34%">Flight</span><span style="--w:26%">Stay</span><span style="--w:18%">Local</span><span style="--w:12%">Guide</span><span style="--w:10%">Content</span></div>
+          </article>
+          <article class="margin-pyramid">
+            <h3>Margin Pyramid</h3>
+            <span>Premium Custom</span><span>Add-on Experience</span><span>Base Tour Fee</span>
+          </article>
+          <article class="kpi-board">
+            <h3>KPI Scenario</h3>
+            <div><b id="kpi-revenue">$86K</b><small>Projected Revenue</small></div>
+            <div><b id="kpi-margin">28%</b><small>Gross Margin</small></div>
+            <div><b id="kpi-leads">42</b><small>Qualified Leads</small></div>
+          </article>
           <article class="wide"><h3>Extension</h3><p data-i18n="scale">單一產品 → 系列產品 · B2C → B2B · 台灣客群 → 北美華人市場 · 一次性旅遊 → 會員型旅遊產品</p></article>
+        </div>
+      </section>
+
+      <section id="quiz" class="chapter quiz-stage">
+        <div class="chapter-intro reveal">
+          <p class="chapter-label">Interactive Decision｜Market Fit Quiz</p>
+          <h2>讓評審參與決策：哪一個市場入口最適合被優先測試？</h2>
+        </div>
+        <div class="quiz-board reveal">
+          <div class="quiz-options">
+            <button data-quiz="edu">我重視家庭決策與教育想像</button>
+            <button data-quiz="nature">我想看到高端休息與自然需求</button>
+            <button data-quiz="biz">我偏好企業、MICE 與商務延伸</button>
+            <button data-quiz="culture">我想打年輕文化與城市體驗</button>
+          </div>
+          <article class="quiz-result">
+            <span>Recommended Entry</span>
+            <h3 id="quiz-title">Direction A</h3>
+            <p id="quiz-copy">以明確客群、強烈決策痛點與顧問式服務作為第一波測試入口。</p>
+            <a href="#selection">查看評估矩陣</a>
+          </article>
         </div>
       </section>
 
@@ -800,11 +886,11 @@
           <p data-i18n="final2">我們是為北美雄獅建立一套新的產品語言。</p>
           <p data-i18n="final3">讓熟悉的北美，重新變成值得出發、值得購買、值得分享的理由。</p>
         </div>
-        <div class="hero-actions reveal">
-          <a class="button primary" href="#" data-i18n="finalCta1">查看完整企劃書</a>
-          <a class="button ghost" href="#" data-i18n="finalCta2">下載簡報</a>
-          <a class="button glass" href="#selected" data-i18n="finalCta3">查看主推產品</a>
-          <a class="button glass" href="#team" data-i18n="finalCta4">聯絡團隊</a>
+        <div class="hero-actions final-actions reveal">
+          <a class="button primary" href="#" data-i18n="finalCta1">進入完整商業計畫</a>
+          <a class="button ghost" href="#" data-i18n="finalCta2">聯絡我們進行簡報演講</a>
+          <a class="button glass" href="#selected" data-i18n="finalCta3">查看案例框架</a>
+          <a class="button glass" href="#team" data-i18n="finalCta4">查看團隊</a>
         </div>
       </section>
 
@@ -814,14 +900,18 @@
           <h2 data-i18n="teamTitle">把不同背景，組成一支能做出產品的團隊</h2>
         </div>
         <div class="team-grid">
-          <article class="reveal"><figure><img src="./assets/team/sam.jpg" alt="謝青杉 Sam" /></figure><span>影音組</span><h3>謝青杉</h3><p>國立中山大學｜國際經營管理碩士</p><small>影像紀錄 · 旅遊企劃 · 跨文化故事轉譯</small></article>
-          <article class="reveal"><figure><img src="./assets/team/jc.jpg" alt="陳世權 JC" /></figure><span>共好組</span><h3>陳世權</h3><p>國立政治大學｜企業管理學系</p><small>體驗設計 · 活動企劃 · 商務拓展與專案推進</small></article>
-          <article class="reveal"><figure><img src="./assets/team/shirley.jpg" alt="胡舒婷 Shirley" /></figure><span>影音組</span><h3>胡舒婷</h3><p>國立台北大學｜公共行政暨政策學系</p><small>專案執行 · 溝通協作 · 現場問題處理</small></article>
-          <article class="reveal"><figure><img src="./assets/team/thomas.jpg" alt="徐家謙 Thomas" /></figure><span>雄獅同仁</span><h3>徐家謙</h3><p>University of New South Wales｜MBA</p><small>Business Strategy · B2B Sales · Entrepreneurship</small></article>
-          <article class="reveal"><figure><img src="./assets/team/bella.jpg" alt="徐文怡 Bella" /></figure><span>雄獅姐姐</span><h3>徐文怡</h3><p>國立臺灣師範大學｜國際人力資源管理</p><small>Leadership · Cultural Exchange · Communication</small></article>
-          <article class="reveal"><figure><img src="./assets/team/mina.jpg" alt="林憶涵 Mina" /></figure><span>設計組</span><h3>林憶涵</h3><p>輔仁大學｜日本語文學系</p><small>平面設計 · 語言能力 · 日本文化與旅遊觀察</small></article>
-          <article class="reveal"><figure><img src="./assets/team/hazel.jpg" alt="洪嘉彣 Hazel" /></figure><span>影音組</span><h3>洪嘉彣</h3><p>國立臺灣大學｜外國語文學系</p><small>翻譯 · 商務開發 · 國際交流與內容宣傳</small></article>
-          <article class="reveal"><figure><img src="./assets/team/edelly.jpg" alt="陳柔妏 Edelly" /></figure><span>共好組</span><h3>陳柔妏</h3><p>國立台灣師範大學｜幼兒與家庭科學學系</p><small>課程設計 · 活動企劃 · 跨文化溝通與團隊領導</small></article>
+          <article class="reveal active" data-team-name="謝青杉 Sam" data-team-unit="影音組" data-team-school="國立中山大學｜國際經營管理碩士" data-team-role="影像紀錄 · 旅遊企劃 · 跨文化故事轉譯" data-team-detail="負責把旅遊現場、團隊觀察與提案內容轉化成能被看見的視覺敘事。擅長用影像整理情緒節奏，讓網站不只是資訊展示，而是像一段旅程被慢慢展開。" data-team-focus="視覺素材規劃 / 旅遊故事剪輯 / 展示節奏"><figure><img src="./assets/team/sam.jpg" alt="謝青杉 Sam" /></figure><span>影音組</span><h3>謝青杉 Sam</h3><p>國立中山大學｜國際經營管理碩士</p><small>影像紀錄 · 旅遊企劃 · 跨文化故事轉譯</small></article>
+          <article class="reveal" data-team-name="陳世權 JC" data-team-unit="共好組" data-team-school="國立政治大學｜企業管理學系" data-team-role="體驗設計 · 活動企劃 · 商務拓展與專案推進" data-team-detail="負責把市場問題轉成可被理解的產品邏輯，協助梳理評審看得懂的策略敘事、體驗架構與商業可能性。適合處理從概念到簡報現場的整體推進。" data-team-focus="產品邏輯 / 商務敘事 / 提案整合"><figure><img src="./assets/team/jc.jpg" alt="陳世權 JC" /></figure><span>共好組</span><h3>陳世權 JC</h3><p>國立政治大學｜企業管理學系</p><small>體驗設計 · 活動企劃 · 商務拓展與專案推進</small></article>
+          <article class="reveal" data-team-name="胡舒婷 Shirley" data-team-unit="影音組" data-team-school="國立台北大學｜公共行政暨政策學系" data-team-role="專案執行 · 溝通協作 · 現場問題處理" data-team-detail="協助專案資訊收斂、跨組溝通與執行節奏控管。能把零散資料整理成清楚的任務，讓團隊在短時間內維持一致方向。" data-team-focus="專案協作 / 資訊整理 / 現場應變"><figure><img src="./assets/team/shirley.jpg" alt="胡舒婷 Shirley" /></figure><span>影音組</span><h3>胡舒婷 Shirley</h3><p>國立台北大學｜公共行政暨政策學系</p><small>專案執行 · 溝通協作 · 現場問題處理</small></article>
+          <article class="reveal" data-team-name="徐家謙 Thomas Hsu" data-team-unit="雄獅同仁" data-team-school="University of New South Wales｜MBA" data-team-role="Business Strategy · B2B Sales · Entrepreneurship" data-team-detail="提供商業策略、B2B 銷售與創業視角，協助檢視提案是否具有可銷售性、可執行性與商業延展性，是連接企劃與真實市場的重要角色。" data-team-focus="商業策略 / B2B 銷售 / 可行性判斷"><figure><img src="./assets/team/thomas.jpg" alt="徐家謙 Thomas Hsu" /></figure><span>雄獅同仁</span><h3>徐家謙 Thomas Hsu</h3><p>University of New South Wales｜MBA</p><small>Business Strategy · B2B Sales · Entrepreneurship</small></article>
+          <article class="reveal" data-team-name="柯文怡 Bella" data-team-unit="雄獅姐姐" data-team-school="國立臺灣師範大學｜國際人力資源管理" data-team-role="Leadership · Cultural Exchange · Communication" data-team-detail="協助團隊溝通、國際文化理解與品牌語氣整理，讓提案不只完整，也能保持專業、溫度與跨文化說服力。" data-team-focus="團隊溝通 / 文化交流 / 品牌語氣"><figure><img src="./assets/team/bella.jpg" alt="柯文怡 Bella" /></figure><span>雄獅姐姐</span><h3>柯文怡 Bella</h3><p>國立臺灣師範大學｜國際人力資源管理</p><small>Leadership · Cultural Exchange · Communication</small></article>
+          <article class="reveal" data-team-name="林憶涵 Mina Lin" data-team-unit="設計組" data-team-school="輔仁大學｜日本語文學系" data-team-role="平面設計 · 語言能力 · 日本文化與旅遊觀察" data-team-detail="負責視覺美感、資訊層次與旅遊感呈現。擅長把內容轉成更容易閱讀與感受的畫面，協助整體網站維持高級、乾淨、有記憶點。" data-team-focus="視覺設計 / 版面美感 / 旅遊觀察"><figure><img src="./assets/team/mina.jpg" alt="林憶涵 Mina Lin" /></figure><span>設計組</span><h3>林憶涵 Mina Lin</h3><p>輔仁大學｜日本語文學系</p><small>平面設計 · 語言能力 · 日本文化與旅遊觀察</small></article>
+          <article class="reveal" data-team-name="洪嘉彣 Hazel" data-team-unit="影音組" data-team-school="國立臺灣大學｜外國語文學系" data-team-role="翻譯 · 商務開發 · 國際交流與內容宣傳" data-team-detail="協助中英文內容轉譯、國際溝通與商務語氣整理，讓提案能同時面向中文評審與英文市場語境。" data-team-focus="雙語轉譯 / 國際溝通 / 內容宣傳"><figure><img src="./assets/team/hazel.jpg" alt="洪嘉彣 Hazel" /></figure><span>影音組</span><h3>洪嘉彣 Hazel</h3><p>國立臺灣大學｜外國語文學系</p><small>翻譯 · 商務開發 · 國際交流與內容宣傳</small></article>
+          <article class="reveal" data-team-name="陳柔妏 Edelly" data-team-unit="共好組" data-team-school="國立台灣師範大學｜幼兒與家庭科學學系" data-team-role="課程設計 · 活動企劃 · 跨文化溝通與團隊領導" data-team-detail="從教育、家庭與體驗設計角度協助思考客群需求，讓旅程不只是景點安排，而是能照顧使用者情境與情緒的產品。" data-team-focus="課程設計 / 體驗企劃 / 團隊領導"><figure><img src="./assets/team/edelly.jpg" alt="陳柔妏 Edelly" /></figure><span>共好組</span><h3>陳柔妏 Edelly</h3><p>國立台灣師範大學｜幼兒與家庭科學學系</p><small>課程設計 · 活動企劃 · 跨文化溝通與團隊領導</small></article>
+        </div>
+        <div class="team-story reveal">
+          <span>How We Work</span>
+          <b>Research</b><i></i><b>Strategy</b><i></i><b>Design</b><i></i><b>Prototype</b><i></i><b>Pitch</b>
         </div>
       </section>
     </main>
@@ -838,6 +928,6 @@
       </div>
     </footer>
 
-    <script src="./script.js?v=20260614-full-framework"></script>
+    <script src="./script.js?v=20260615-blue-mp3"></script>
   </body>
 </html>
