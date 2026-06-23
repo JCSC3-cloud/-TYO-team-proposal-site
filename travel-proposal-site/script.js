@@ -1,16 +1,18 @@
 const translations = {
   zh: {
-    cold1: "北美，不只是雄獅的一個海外據點。",
-    cold2: "它是雄獅從台灣品牌，走向全球市場時，必須重新被認識的一站。",
-    cold3: "在這裡，旅遊不只是接待旅客。",
-    cold4: "而是開發客源、整合資源、轉譯產品，並建立北美市場的信任。",
-    cold5: "北美雄獅，正在從地接服務，走向市場平台。",
-    coldVisual: "[North America Night Network / Airport Transfer / Coach Service]",
-    coldTitle: "北美雄獅市場提案",
-    coldSub: "Lion Travel North America Proposal",
-    enterProposal: "進入網站",
-    brandName: "北美雄獅市場提案",
-    brandSub: "Lion Travel North America Proposal",
+    cold1: "有些旅行，從抵達開始。",
+    cold2: "有些旅行，從移動本身開始。",
+    cold3: "當鐵道成為節奏，",
+    cold4: "當自行車成為自由，",
+    cold5: "旅行就不再只是從 A 到 B。",
+    cold6: "",
+    cold7: "",
+    coldVisual: "Ride the Island. Taste the Culture.",
+    coldTitle: "LION RIDE & TASTE TAIWAN 2.0",
+    coldSub: "Rail × Bike × Food Culture Soft Adventure",
+    enterProposal: "進入提案",
+    brandName: "LION RIDE & TASTE TAIWAN 2.0",
+    brandSub: "Rail × Bike × Food Culture",
     navPosition: "公司定位",
     navDualRole: "雙向角色",
     navNetwork: "據點布局",
@@ -27,12 +29,12 @@ const translations = {
     navEngine: "產品力矩陣",
     navSelected: "主推產品",
     navPitch: "收束",
-    heroChapter: "Main Stage｜Proposal Cover",
-    mainSlogan: "Lion Travel North America Proposal",
-    heroTitle: "北美雄獅，\n不只是據點，\n而是一個等待被重新定義的\n市場入口。",
-    heroLead: "從地接服務、客源開發到全球資源整合，這不是一條行程提案，而是一個北美市場的重構計畫。",
+    heroChapter: "Main Stage｜Bike × Rail Proposal Cover",
+    mainSlogan: "Railway Rhythm × Bicycle Freedom × North America Scale",
+    heroTitle: "不是所有旅行，\n都該被同一種方式完成。",
+    heroLead: "從鐵道到自行車，從移動到沉浸，這不只是旅遊提案，而是一種重新設計旅行方式的產品想像。",
     heroCta1: "進入公司簡介",
-    heroCta2: "查看完整框架",
+    heroCta2: "查看完整提案框架",
     paradoxChapter: "Chapter 1｜The Product Problem",
     paradoxTitle: "問題不是北美不吸引人，而是北美常被賣得太像以前。",
     paradoxLead: "地理名稱不能再單獨說服旅客，產品必須說出「為什麼值得」。",
@@ -43,18 +45,24 @@ const translations = {
     newLang3: "企業創新參訪",
     newLang4: "熟齡安心慢旅",
     newLang5: "城市文化通行證",
-    bridgeChapter: "北美雄獅｜從地接據點到北美市場平台",
-    bridgeTitle: "北美雄獅不是海外辦公室，\n而是雄獅重新打開\n北美市場的前線基地。",
-    bridgeSubtitle: "它承接來到美國、加拿大的旅客，也開始主動經營北美當地客群。\n它把雄獅全球資源，轉化成符合北美市場需求的旅遊服務。",
-    profile1Title: "北美雄獅正在從\n「美加地接公司」\n轉型為\n「北美客源市場開發平台」。",
-    profile1Text: "過去，北美雄獅主要負責接待來到美國、加拿大的旅客，安排交通、住宿、導覽、票券與當地行程。現在，它的任務正在擴大：不只服務進入北美的旅客，也要主動開發北美當地客群，將美國與加拿大旅客送往世界各地。",
-    profile2Title: "它同時是目的地服務中心，也是客源市場開發者。",
+    bridgeChapter: "Capability Base｜Why Lion NA Can Build Bike × Rail",
+    bridgeTitle: "北美雄獅不是背景介紹，\n而是這個產品能被交付的\n能力基底。",
+    bridgeSubtitle: "它的價值不只是在地接待，而是把北美移動、接待、資源整合與目的地操作能力，轉化成新的旅行設計能力。",
+    profile1Title: "把在地接待能力，轉化成自行車 × 鐵道產品的交付能力。",
+    profile1Text: "北美雄獅的價值，不只是在地接待，而是把北美移動、接待、資源整合與目的地操作能力，轉化成自行車 × 鐵道產品能被交付、被信任、被擴張的底層能力。",
+    roleFromLabel: "FROM",
+    roleFromTitle: "在地接待與移動服務",
+    roleFromText: "交通接駁、車隊、導覽、票券、在地行程與特殊團體操作。",
+    roleToLabel: "TO",
+    roleToTitle: "新型旅行產品交付平台",
+    roleToText: "把鐵道節奏、自行車體驗與北美旅客需求，轉成可被銷售與擴張的產品入口。",
+    profile2Title: "它同時掌握目的地操作，也能支撐新型移動產品的銷售。",
     profileInbound: "服務來到美國與加拿大的旅客，負責交通、住宿、導覽、票券、當地行程、商務接待、學生團、企業團與特殊專案。",
     profileOutbound: "開發美國與加拿大當地華人、亞裔、英文主流與西語市場，將雄獅既有的全球產品重新包裝成北美消費者看得懂、信得過、願意購買的旅遊商品。",
-    profileDualCore: "北美雄獅真正的價值，是同時懂「目的地怎麼操作」，也懂「客源市場怎麼被說服」。",
+    profileDualCore: "北美雄獅真正的價值，是同時懂「旅程怎麼被安全完成」，也懂「北美旅客為什麼願意出發」。",
     profile3Title: "每一個據點，\n都不是地圖上的點，\n而是一種市場功能。",
     profile3Close: "北美雄獅的據點布局，不只是擴張門市，而是建立一張能接待、能銷售、能支援、能應變的北美旅遊服務網絡。",
-    profile4Title: "真正讓北美雄獅不一樣的，不是據點數，而是背後的操作底盤。",
+    profile4Title: "真正讓自行車 × 鐵道可行的，不是概念，而是背後的操作底盤。",
     capTitle1: "雄獅總部產品庫",
     capTitle2: "全球內部供應鏈",
     capTitle3: "北美自有車隊",
@@ -165,19 +173,19 @@ const translations = {
     gap2Text: "親子、熟齡、企業、學生、高端旅客，不該被同一套北美行程說服。",
     gap3Title: "體驗缺口",
     gap3Text: "行程不應只回答去哪裡，更要回答旅客會感受到什麼、帶回什麼、為什麼願意分享。",
-    collectionChapter: "Chapter 3｜Product Reveal",
-    collectionTitle: "未來產品框架",
-    collectionLead: "先保留產品空格，後續再把市場洞察轉譯成可上架的產品方向。",
-    panelATitle: "待定產品方向 A",
-    panelAPromise: "給準留學生家庭的市場入口。",
-    panelBTitle: "待定產品方向 B",
-    panelBPromise: "給高壓族與高端熟齡旅客的市場入口。",
-    panelCTitle: "待定產品方向 C",
-    panelCPromise: "給企業、EMBA 與創業社群的市場入口。",
-    panelDTitle: "待定產品方向 D",
-    panelDPromise: "給想去遠方、但不想被遠方折磨的熟齡旅客。",
-    panelETitle: "待定產品方向 E",
-    panelEPromise: "給年輕文化旅客的市場入口。",
+    collectionChapter: "Chapter 3｜Product System",
+    collectionTitle: "Ride & Taste 產品引擎",
+    collectionLead: "用 Food、Bike、Rail 與 CRM，把台灣入境旅程轉成可銷售、可交付、可回流的產品。",
+    panelATitle: "Food-led Demand",
+    panelAPromise: "美食先創造想來台灣的理由。",
+    panelBTitle: "Bike Memory",
+    panelBPromise: "短騎讓風景變成身體記憶。",
+    panelCTitle: "Rail Support",
+    panelCPromise: "鐵道降低距離、天候、體力與營運風險。",
+    panelDTitle: "Safety System",
+    panelDPromise: "支援車、e-bike、Rail Switch 與 SOP 讓騎旅可交付。",
+    panelETitle: "CRM Flywheel",
+    panelEPromise: "旅後資料、回購與推薦讓一次旅程延伸為長期價值。",
     expand: "展開",
     engineChapter: "Chapter 6｜Product Power Matrix",
     engineTitle: "我們不是選最酷的想法，而是選最能被北美雄獅推出、銷售與擴張的產品。",
@@ -260,17 +268,19 @@ const translations = {
     contactTeam: "聯絡團隊"
   },
   en: {
-    cold1: "North America is not just one of Lion Travel’s overseas offices.",
-    cold2: "It is where Lion Travel, moving from a Taiwan brand toward a global market, must be recognized again.",
-    cold3: "Here, travel is not only about receiving travelers.",
-    cold4: "It is about developing customers, integrating resources, translating services, and building trust in North America.",
-    cold5: "Lion Travel North America is moving from destination service toward a market platform.",
-    coldVisual: "[North America Night Network / Airport Transfer / Coach Service]",
-    coldTitle: "Lion Travel North America Proposal",
-    coldSub: "北美雄獅市場提案",
-    enterProposal: "Enter Site",
-    brandName: "Lion Travel North America Proposal",
-    brandSub: "Market Strategy Framework",
+    cold1: "Some journeys begin when you arrive.",
+    cold2: "Some journeys begin with movement itself.",
+    cold3: "When rail becomes rhythm,",
+    cold4: "when the bicycle becomes freedom,",
+    cold5: "travel is no longer just from A to B.",
+    cold6: "",
+    cold7: "",
+    coldVisual: "Ride the Island. Taste the Culture.",
+    coldTitle: "LION RIDE & TASTE TAIWAN 2.0",
+    coldSub: "Rail × Bike × Food Culture Soft Adventure",
+    enterProposal: "Enter the Proposal",
+    brandName: "LION RIDE & TASTE TAIWAN 2.0",
+    brandSub: "Rail × Bike × Food Culture",
     navPosition: "Positioning",
     navDualRole: "Dual Role",
     navNetwork: "Network",
@@ -287,12 +297,12 @@ const translations = {
     navEngine: "Power Matrix",
     navSelected: "Hero MVP",
     navPitch: "Final Pitch",
-    heroChapter: "Main Stage｜Proposal Cover",
-    mainSlogan: "Lion Travel North America Proposal",
-    heroTitle: "Lion Travel North America\nis not just a location.\nIt is a market entry point\nwaiting to be redefined.",
-    heroLead: "From ground service and source-market development to global resource integration, this is not an itinerary proposal. It is a North American market rebuilding plan.",
+    heroChapter: "Main Stage｜Bike × Rail Proposal Cover",
+    mainSlogan: "Railway Rhythm × Bicycle Freedom × North America Scale",
+    heroTitle: "Not every journey\nshould be completed\nthe same way.",
+    heroLead: "From rail to bicycle, from movement to immersion, this is not only a travel proposal. It is a product imagination for redesigning how travel is experienced.",
     heroCta1: "Enter Company Profile",
-    heroCta2: "View Full Framework",
+    heroCta2: "View Proposal Framework",
     paradoxChapter: "Chapter 1｜The Product Problem",
     paradoxTitle: "North America is not lacking appeal. It is too often packaged as the same kind of trip.",
     paradoxLead: "Geographic labels can no longer persuade on their own. A product must explain why it is worth choosing.",
@@ -303,18 +313,24 @@ const translations = {
     newLang3: "Business innovation visits",
     newLang4: "Senior comfort slow travel",
     newLang5: "Urban culture pass",
-    bridgeChapter: "Lion Travel North America｜From Ground Handler to Market Platform",
-    bridgeTitle: "Lion Travel North America\nis not just an overseas office.\nIt is the frontline base\nfor rebuilding the North American market.",
-    bridgeSubtitle: "It serves travelers arriving in the U.S. and Canada while developing local North American customers.\nIt turns Lion Travel’s global resources into services built for this market.",
-    profile1Title: "Lion Travel North America is transforming\nfrom a U.S. and Canada ground handler\ninto a North American source-market\ndevelopment platform.",
-    profile1Text: "In the past, Lion Travel North America mainly served travelers arriving in the U.S. and Canada by arranging transportation, accommodation, guiding, tickets, and local tours. Now, its mission is expanding: it must not only serve travelers entering North America, but also develop local North American customers and send U.S. and Canadian travelers to destinations around the world.",
-    profile2Title: "It is both a destination service center and a source-market developer.",
+    bridgeChapter: "Capability Base｜Why Lion NA Can Build Bike × Rail",
+    bridgeTitle: "Lion Travel North America\nis not background context.\nIt is the operating base\nthat makes this product deliverable.",
+    bridgeSubtitle: "Its value is not only ground handling. It transforms mobility, reception, resource integration, and destination operations into a new travel design capability.",
+    profile1Title: "Turning local operation into Bike × Rail product delivery capability.",
+    profile1Text: "Lion Travel North America’s value is not only reception. It converts North American mobility, local service, resource integration, and destination operations into the operating base that allows a Bike × Rail product to be delivered, trusted, and scaled.",
+    roleFromLabel: "FROM",
+    roleFromTitle: "Local Reception and Mobility Service",
+    roleFromText: "Transfers, fleet operation, guiding, ticketing, local tours, and special group execution.",
+    roleToLabel: "TO",
+    roleToTitle: "New Travel Product Delivery Platform",
+    roleToText: "Turning railway rhythm, bicycle experience, and North American demand into a sellable, scalable product entry.",
+    profile2Title: "It operates destinations and supports the sale of new mobility-based travel products.",
     profileInbound: "Serving travelers arriving in the U.S. and Canada through transportation, accommodation, guiding, tickets, local tours, business reception, student groups, corporate groups, and special projects.",
     profileOutbound: "Developing local Chinese, Asian, English-speaking mainstream, and Spanish-speaking markets in the U.S. and Canada, while repackaging Lion Travel’s existing global resources into travel services that North American customers can understand, trust, and purchase.",
-    profileDualCore: "Lion Travel North America’s real value is understanding both how destinations operate and how source markets are persuaded.",
+    profileDualCore: "Lion Travel North America’s real value is understanding both how a journey is safely completed and why North American travelers choose to begin.",
     profile3Title: "Each location\nis not merely a point on the map.\nIt represents a market function.",
     profile3Close: "Lion Travel North America’s office layout is not just retail expansion. It is building a North American travel service network that can receive, sell, support, and respond.",
-    profile4Title: "What makes Lion Travel North America different is not the number of offices, but the operating system behind them.",
+    profile4Title: "What makes Bike × Rail possible is not the concept, but the operating system behind it.",
     capTitle1: "Headquarters Product Library",
     capTitle2: "Internal Global Supply Chain",
     capTitle3: "North America Owned Coaches",
@@ -428,16 +444,16 @@ const translations = {
     collectionChapter: "Chapter 3｜Product Reveal",
     collectionTitle: "Future Product Framework",
     collectionLead: "Keeping the product slots open while turning market insight into future launch-ready directions.",
-    panelATitle: "Product Direction A",
-    panelAPromise: "A market entry point for pre-college families.",
-    panelBTitle: "Product Direction B",
-    panelBPromise: "A market entry point for high-pressure and premium mature travelers.",
-    panelCTitle: "Product Direction C",
-    panelCPromise: "A market entry point for corporate, EMBA, and founder communities.",
-    panelDTitle: "Product Direction D",
-    panelDPromise: "A market entry point for travelers who want comfort and lower pressure.",
-    panelETitle: "Product Direction E",
-    panelEPromise: "A market entry point for young culture travelers.",
+    panelATitle: "Food-led Demand",
+    panelAPromise: "Food creates the reason to choose Taiwan.",
+    panelBTitle: "Bike Memory",
+    panelBPromise: "Soft riding turns scenery into a body memory.",
+    panelCTitle: "Rail Support",
+    panelCPromise: "Rail reduces distance, weather, and fatigue risk.",
+    panelDTitle: "Safety System",
+    panelDPromise: "Support vehicles, e-bike options, and rail switch keep the trip deliverable.",
+    panelETitle: "CRM Flywheel",
+    panelEPromise: "Post-trip data and credits extend one journey into future value.",
     expand: "Expand",
     engineChapter: "Chapter 6｜Product Power Matrix",
     engineTitle: "We are not choosing the coolest idea. We are choosing the product Lion Travel North America can launch, sell, and scale.",
@@ -541,23 +557,277 @@ const orbitData = {
 };
 
 const recommendationData = {
-  edu: ["Direction A", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  nature: ["Direction B", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  biz: ["Direction C", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  slow: ["Direction D", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"],
-  culture: ["Direction E", "Reason：[Reason Placeholder] · MVP Suggestion：[MVP Placeholder]"]
+  edu: {
+    title: "Direction A",
+    copy: "客群明確、決策痛點強，適合以顧問式服務測試第一波市場反應。",
+    score: 86,
+    color: "#1F4788",
+    values: [92, 88, 72, 84, 68, 80],
+    judge: [84, 86, 70, 78, 66, 74],
+    internal: [86, 84, 76, 90, 70, 78],
+    scores: [92, 88, 72, 84, 74, 68, 82, 80, 86]
+  },
+  nature: {
+    title: "Direction B",
+    copy: "高端休息需求具備情緒張力，適合用自然場景與服務節奏建立差異。",
+    score: 82,
+    color: "#2D5F3F",
+    values: [86, 76, 82, 78, 74, 72],
+    judge: [82, 72, 80, 74, 70, 70],
+    internal: [80, 74, 78, 84, 76, 68],
+    scores: [86, 76, 82, 78, 80, 74, 72, 72, 78]
+  },
+  biz: {
+    title: "Direction C",
+    copy: "客單價與 B2B 延伸潛力高，適合搭配 MICE 與企業客製資源測試。",
+    score: 84,
+    color: "#5B4B8A",
+    values: [78, 82, 86, 88, 90, 76],
+    judge: [76, 80, 82, 82, 84, 72],
+    internal: [74, 86, 88, 92, 90, 82],
+    scores: [78, 82, 86, 88, 86, 90, 76, 76, 82]
+  },
+  slow: {
+    title: "Direction D",
+    copy: "服務價值清楚，適合以低壓節奏、中文支援與安心感建立信任。",
+    score: 79,
+    color: "#C4B074",
+    values: [74, 80, 70, 86, 78, 66],
+    judge: [72, 78, 68, 78, 74, 62],
+    internal: [76, 82, 70, 90, 80, 68],
+    scores: [74, 80, 70, 86, 82, 78, 84, 66, 74]
+  },
+  culture: {
+    title: "Direction E",
+    copy: "社群分享性高，適合做內容導流與城市體驗包裝，但需要更強票券整合。",
+    score: 77,
+    color: "#D64A6B",
+    values: [80, 70, 84, 62, 66, 82],
+    judge: [78, 68, 78, 60, 62, 78],
+    internal: [74, 72, 86, 66, 68, 84],
+    scores: [80, 70, 84, 62, 68, 66, 70, 82, 78]
+  }
+};
+
+const conceptAliases = {
+  edu: "A 準留學生",
+  nature: "B 自然修復",
+  biz: "C 企業創新",
+  slow: "D 熟齡慢旅",
+  culture: "E 年輕文化"
+};
+
+const challengeCopy = {
+  Brand: "你認為第一步是讓北美市場重新認識北美雄獅，因此品牌語言與可記憶的入口會更重要。",
+  Segment: "你認為關鍵在於分眾，表示產品不能再用同一套地名說服所有旅客。",
+  Resource: "你認為北美雄獅不是缺資源，而是需要把既有據點、車隊與供應鏈轉成市場看得懂的商品入口。"
+};
+
+const alignmentMap = {
+  Brand: "brand",
+  Segment: "segment",
+  Resource: "resource"
+};
+
+const judgeColorMap = {
+  Brand: "#1F4788",
+  Segment: "#2D5F3F",
+  Resource: "#5B4B8A"
+};
+
+window.judgeProfile = window.judgeProfile || {
+  challenge: "",
+  challengeTitle: "",
+  preferredProduct: "Direction A",
+  preferredKey: "edu",
+  travelers: 24,
+  days: 7,
+  model: "平衡導向"
+};
+
+const orgData = {
+  inbound: {
+    kicker: "Inbound Layer",
+    title: "美加在地接待",
+    copy: "承接來到美國與加拿大的旅客，整合交通、住宿、導覽、票券、在地行程與團體接待。",
+    tags: ["Coach Fleet", "Local Tours", "Reception SOP"]
+  },
+  platform: {
+    kicker: "Platform Core",
+    title: "北美市場平台",
+    copy: "把在地服務、全球供應鏈、顧問式銷售與跨時區支援，轉化成北美市場能理解的旅遊入口。",
+    tags: ["Market Translation", "Service Design", "Global Network"]
+  },
+  outbound: {
+    kicker: "Outbound Layer",
+    title: "北美客源開發",
+    copy: "主動開發北美當地華人、亞裔、英文主流與西語市場，把全球旅遊資源重新包裝給北美消費者。",
+    tags: ["Source Market", "Advisory Sales", "Product Language"]
+  }
+};
+
+const quizData = {
+  edu: ["Direction A", "以家庭決策、教育想像與高信任服務作為第一波測試入口。"],
+  nature: ["Direction B", "以自然場景、慢節奏與高端休息感創造最直覺的旅遊理由。"],
+  biz: ["Direction C", "以企業客製、MICE 與商務參訪建立高客單價的成長路徑。"],
+  culture: ["Direction E", "以城市文化、票券整合與社群分享感打開年輕市場入口。"]
+};
+
+const teamProfiles = {
+  "謝青杉 Sam": {
+    name: "謝青杉",
+    english: "Sam",
+    nationality: "中華民國",
+    birthday: "2000/4/14",
+    language: "無",
+    specialty: "# Home Barista # Cafe Surfer # Travel Planning # Photographing # Sporting",
+    contact: ["0932-256-947", "samshieh14@yahoo.com", "sam_shieh_0414"],
+    about: "Hola! 因為當年不懂西語，在巴塞隆納錯失晚餐而開始自學西文。Me llamo Sam. Yo hablo un poco de español. 我是興趣多元的青杉，不是綠水。我常用三個標籤形容自己：Explorer 代表我對體驗新事物的好奇心，也代表我熱愛透過旅行認識世界；Storyteller 讓我把旅程的一切透過影像記錄，再藉由語言和文字分享出去；Connector 則是與更多人相識與連結。現在的我，正努力探索能旅居海外的機會，夢想是走遍世界五大洋七大洲，持續探索、分享與創造連結。",
+    expectation: "期許自己能夠進一步認識旅遊產業，也更認識自己的志向；最重要的是跟著優秀的哈伯造星第五屆學員相互學習與扶持！",
+    experience: [
+      ["品祿盃咖啡藝術競賽／咖啡拉花大專社會拉花組合組", "曾參加多項咖啡相關競賽，涵蓋咖啡拉花、咖啡沖煮與杯測，也在升大二暑假參加首屆品祿盃咖啡拉花賽並獲得第三名。", "2020年8月"],
+      ["教育部獎學金赴荷蘭阿姆斯特丹應用科技大學交換一學期", "課外自主規劃利用課餘時間遊歷歐洲 12 國，並自發舉辦台灣咖啡豆國民外交活動，傳遞 40 份台灣精品咖啡給歐洲各地獨立咖啡店家，交流文化並提升台灣能見度。", "2023年2月－6月"],
+      ["FAE internship & AI chatbot maintenance engineer／實習生", "擔任技術支援部實習生，需要與業務溝通、複製客戶使用產品情境與狀況，跨部門討論解決方案；也兼任管理優化官網的線上智能客服機器人，並在實習結束匯報中獲得主管肯定。", "2024年5月－8月、2026年至今"],
+      ["跨文化交流經驗", "在 Like It Formosa 擔任 Kaohsiung Harbor City 步行導覽員，帶過來自八個不同國家的旅客認識高雄，也認識哈瑪星地區的發展。", ""]
+    ]
+  },
+  "陳世權 JC": {
+    name: "陳世權（JC）",
+    english: "Jordon, Chin Shi Chien",
+    nationality: "馬來西亞",
+    birthday: "2004/10/17",
+    language: "無",
+    specialty: "# 體驗設計 # 活動企劃 # 產品推廣 # 商務拓展 # 專案執行",
+    contact: ["0987-003-147", "chinshichien6668@gmail.com", "jcsc36", "jcsc3"],
+    about: "我是陳世權，也可以叫我 Jordon，來自馬來西亞，目前就讀政大企管系。平常我喜歡旅行、觀察人，也很喜歡把一群人的想法整理成可以真的執行的企劃。過去我參與過許多校園活動，也曾推動產品在校園社團中洽談合作，慢慢發現自己最有熱情的不是單純把事情辦完，而是設計一段讓人有感、會記得的體驗。希望在哈伯造星計畫中，能和大家一起學習旅遊產業的企劃思維，也把自己的整合力與推進力帶進團隊。",
+    expectation: "希望學會如何從使用者角度理解旅程，從企劃角度設計體驗，並從團隊合作中把想法推進到真正落地。期待在課程中認識旅遊產業的運作方式，也和夥伴一起創造一段會被記住的學習旅程。",
+    experience: [
+      ["馬來西亞皇家童軍最高榮譽", "童軍成員與團隊領導角色，透過長期童軍訓練取得最高榮譽。培養責任感、紀律、領導力與在壓力下完成任務的能力，也建立我面對團隊挑戰時穩定承擔的特質。", "2023年"],
+      ["Tocus 校園匿名交流平台", "商務拓展與校園合作推進，主動接洽多個校園社團洽談合作，協助規劃使用情境、合作方式與導流策略，將平台從概念推進到實際校園場景中驗證，累積產品推廣、需求理解與跨組織溝通經驗。", "2026年"],
+      ["20+ 場校內外活動統籌執行", "活動企劃與執行幹部，負責流程規劃、團隊協調、資源整合與現場應變，累積從發想到落地執行的完整專案經驗。", "2023年至今"],
+      ["跨文化交流經驗", "來自馬來西亞，長期在華語、英文、馬來文與多元文化環境中成長；來台就讀政大後，也持續參與僑生聯誼會、馬來西亞同學會與多項校園活動，經常需要在不同國籍、文化背景與溝通方式之間協調合作。", ""]
+    ]
+  },
+  "胡舒婷 Shirley": {
+    name: "胡舒婷",
+    english: "Shirley",
+    nationality: "中華民國",
+    birthday: "2001/2/17",
+    language: "TOEIC 775",
+    specialty: "# 活動規劃 # 解決問題 # 臨機問題處理",
+    contact: ["0955-772-109", "noahchen4220@gmail.com", "noah_o._o"],
+    about: "我是習慣穩扎穩打、把事情做到位的胡舒婷！具備法國交換與公關專案執行經驗，重視溝通與協作，擅長將細節完整落實，讓專案穩定推進。期待在哈伯計畫中發揮執行力，與團隊一同打造兼具品質與體驗的旅程。",
+    expectation: "希望透過本次課程更認識雄獅集團的運作，並對旅遊業有更深刻的理解，同時培養對議題探討與解決問題的能力。",
+    experience: [
+      ["台北大學雄友週／副召", "負責人員管理與專案管理，成功帶領 50 人團隊達成 12 萬元的業績。", "2020年5月"],
+      ["原萃雲霧茶所 KOC 合作專案／專案執行", "合作 11 位 KOC，產出 27 則曝光，優於原先談定合作曝光。", "2025年4月"],
+      ["Adidas NO TRACK DAY 專案／專案執行", "主導塗鴉師邀約，透過比價與溝通，成功降低該項目成本 26%。", "2025年7月"],
+      ["跨文化交流經驗", "曾至法國 EDC Paris Business School 交換一年，並於期間遊歷歐洲 14 國，具備豐富的跨文化交流與國際旅遊規劃經驗。", ""]
+    ]
+  },
+  "徐家謙 Thomas Hsu": {
+    name: "徐家謙",
+    english: "Thomas Hsu",
+    nationality: "中華民國",
+    birthday: "1998/1/8",
+    language: "IELTS 8, TOEIC 980",
+    specialty: "# Business Strategy # B2C # B2B Sales # piano playing",
+    contact: ["0935-970-789", "thomashsu@liontravel.com", "sam_shieh_0414"],
+    about: "I'm Thomas. I am driven by the desire to make an impact in the communities I'm part of, which is why I've been working on entrepreneurship and intrapreneurship projects. For me, building relationships and expanding my network is not just about jobs; it's about learning from others and truly getting to know people. I'm passionate about playing the piano and basketball. The common thread between the two is how they help me focus and bring out my best. I'm looking forward to this project and collaborating with people in the cohort.",
+    expectation: "I hope to learn thoroughly and understand where I can contribute the most; more importantly, to get to know everyone in the cohort, their stories and talents.",
+    experience: [
+      ["路口工作室／共同創辦人", "目前為全台前三大學士服、學士照品牌。", "2018年9月"],
+      ["紐約大學耶魯大學創業競賽／Team Lead／第三名", "獲得第三名與 15000 美金獎金。", "2024年8月"],
+      ["foodpanda B2B sales competition／B2B AM／第一名", "以 B2B sales 與 account management 能力取得第一名。", "2025年10月"],
+      ["跨文化交流經驗", "目前資料列為無。", ""]
+    ]
+  },
+  "徐文怡 Bella": {
+    name: "徐文怡（Bella）",
+    english: "Hsu Wut Yee Win",
+    nationality: "緬甸",
+    birthday: "1997/2/6",
+    language: "IELTS 8",
+    specialty: "# Business Strategy # B2C # B2B Sales # piano playing",
+    contact: ["0979-706-062", "bk02042026@gmail.com", "Bellako3127", "bellako3127"],
+    about: "Hi, I'm Bella! I'm inspired by cultural exchange and diversity, and I love learning how people from different backgrounds connect and communicate. I enjoy traveling, exploring new foods, and creating meaningful conversations. One of my most interesting experiences was studying abroad, which shaped my global mindset. In life, I hope to bridge cultures and make a positive impact to this journey.",
+    expectation: "I hope to strengthen my leadership, communication, and problem-solving skills through practical collaboration and real-world business insights. This course will help me develop strategic thinking, adapt to dynamic challenges, and build confidence in contributing effectively within a team-driven environment.",
+    experience: [
+      ["4th National Debate Tournament / World Debate Championship (WUDC)", "Participated in debate training and competition experience.", "2015年－2016年"],
+      ["Public Relations Intern B.I.G, London, UK", "Public relations internship experience in London.", "2020年－2021年"],
+      ["Academic Advisor & Social Studies Teacher, Oakwood International School Thailand", "Academic advising and social studies teaching experience.", "2024年4月－2025年3月"],
+      ["跨文化交流經驗", "Student exchange program and cultural exchange camp at Walailak University, Thailand; Forty University Human Resources development, Netherlands, Amsterdam.", ""]
+    ]
+  },
+  "林憶涵 Mina Lin": {
+    name: "林憶涵（米娜）",
+    english: "Mina Lin",
+    nationality: "中華民國",
+    birthday: "2004/9/1",
+    language: "TOEIC 945, JLPT N1",
+    specialty: "# 語言能力 # 平面設計",
+    contact: ["0988-522-637", "yiiiiihan0901@gmail.com", "yihan0901"],
+    about: "資深貓奴，育有一兒太郎北鼻。日常興趣喜歡跑咖、插畫和日本旅行，希望有一天可以跑完日本地圖！ENTP，個性活潑勇於嘗試，爬過雪山、合歡山也游過日月潭。一直沒有機會單車環台是我的遺憾。很高興認識大家！",
+    expectation: "希望深入了解旅遊業，並多方接觸不同的崗位，期待我們大家 8 週後的成長！",
+    experience: [
+      ["畢業專題優秀作品／得獎人", "撰寫 30 頁日文雜誌《台北カフェ巡り》，評選得到殊榮與獎學金，作品在校展出。", "2026年2月"],
+      ["2025 台北國際酒展／策展人員", "協助義大利葡萄酒商進行展位接待與產品介紹。", "2025年11月"],
+      ["全人中心專業倫理課程／必修課教學助理 TA", "協助教授處理文書。", "2026年4月"],
+      ["跨文化交流經驗", "大三時帶姐妹校南山大學的日本同學們台北兩日遊。", ""]
+    ]
+  },
+  "洪嘉彣 Hazel": {
+    name: "洪嘉彣",
+    english: "Hazel",
+    nationality: "中華民國",
+    birthday: "2003/1/27",
+    language: "IELTS 8",
+    specialty: "# 翻譯 # 商務開發 # 唱歌 # 打排球",
+    contact: ["0909-002-772", "hazel27xxx@gmail.com", "hhazel27"],
+    about: "我是洪嘉彣，可以叫我 Hazel。我的興趣是唱歌、打排球，喜歡動物和大自然。",
+    expectation: "期待在課程中增進問題解決與團隊能力，在合作中激發創新想法，也結交各國各校的朋友。",
+    experience: [
+      ["台大嘻哈文化研究社／網管", "經營社群帳號宣傳紀錄並提升社團曝光。", "2022年9月－2023年8月"],
+      ["英國肯特大學／交換學生", "與外國學生交流並自助遊歐洲。", "2024年9月－2025年6月"],
+      ["美國西維吉尼亞州臺灣辦事處／商務開發實習生", "參與國際展會開發有意赴美投資廠商，舉辦活動並接待外賓。", "2025年10月至今"],
+      ["跨文化交流經驗", "赴英國肯特大學擔任交換學生一年，擔任學校國際學生學伴及志工。", ""]
+    ]
+  },
+  "陳柔妏 Edelly": {
+    name: "陳柔妏（熊二）",
+    english: "Edelly",
+    nationality: "印尼",
+    birthday: "2004/7/1",
+    language: "TOEIC B2, BESTEP B2",
+    specialty: "# 課程設計 # 活動企劃執行 # 跨文化溝通 # 團隊領導",
+    contact: ["0916-137-281", "erustania@gmail.com"],
+    about: "我是來自師大的陳柔妏，是個很喜歡運動、旅行，也熱愛參與志工活動的人。平常喜歡瑜伽、游泳，也很享受透過旅行認識不同文化與生活方式。對我來說，到世界各地看看不同的人事物，不只是放鬆，更是一種學習與成長。",
+    expectation: "希望能更深入了解旅遊產業的實際運作與職場樣貌，特別是在活動規劃、跨部門協作與顧客體驗設計方面的實務經驗。",
+    experience: [
+      ["慈青社／社長", "主導社團年度規劃與大型志工活動，帶領團隊分工合作，培養領導與決策能力。", "2023年－2024年"],
+      ["印尼同學會／秘書", "負責會務聯繫與內部溝通，維繫印尼學生社群關係，打造穩定且互助的交流環境。", "2023年－2024年"],
+      ["瑜珈社／副社長", "協助安排課程與活動執行，優化流程與現場運作，提升活動順暢度與參與體驗。", "2024年－2025年"],
+      ["跨文化交流經驗", "慈濟海外人文交流與尼泊爾團志工，參與海外人文交流與教學活動，帶領衛生與環保主題課程，提升當地學童對衛生習慣與環境保護的認知與實踐意識，並在服務過程中深化對慈濟人文精神與當地志工理念的理解。", ""]
+    ]
+  }
 };
 
 const root = document.documentElement;
 const header = document.querySelector(".site-header");
-const coldOpen = document.querySelector("#cold-open");
-const enterSite = document.querySelector("#enter-site");
+const coldOpen = document.querySelector("#cold-open") || document.querySelector("#intro-v4");
+const enterSite = document.querySelector("#enter-journey") || document.querySelector("#enter-site");
 const skipIntro = document.querySelector("#skip-intro");
 const musicToggle = document.querySelector("#music-toggle");
+const backgroundTrack = document.querySelector("#background-track");
 const languageButtons = document.querySelectorAll("[data-lang]");
 let activeLang = localStorage.getItem("travelProposalLang") || "zh";
 let audioContext;
 let musicNodes;
+
+if (coldOpen) {
+  coldOpen.classList.remove("hidden", "entering");
+  document.body.classList.add("intro-active");
+}
 
 function setLanguage(lang) {
   activeLang = lang;
@@ -579,6 +849,187 @@ function updateOrbit(key) {
   document.querySelector("#orbit-title").textContent = data[1];
   document.querySelector("#orbit-text").textContent = data[2];
   document.querySelectorAll(".orbit").forEach((button) => button.classList.toggle("active", button.dataset.orbit === key));
+  document.querySelector(".orbit-system")?.setAttribute("data-active-orbit", key);
+}
+
+function radarPoints(values) {
+  const center = 160;
+  const maxRadius = 120;
+  return values.map((value, index) => {
+    const angle = -Math.PI / 2 + index * (Math.PI * 2 / values.length);
+    const radius = maxRadius * value / 100;
+    const x = center + Math.cos(angle) * radius;
+    const y = center + Math.sin(angle) * radius;
+    return `${x.toFixed(1)},${y.toFixed(1)}`;
+  }).join(" ");
+}
+
+function updateRecommendation(key) {
+  const data = recommendationData[key];
+  if (!data) return;
+  window.judgeProfile.preferredProduct = conceptAliases[key] || data.title;
+  window.judgeProfile.preferredKey = key;
+  document.querySelectorAll(".collection-tabs button").forEach((item) => item.classList.toggle("active", item.dataset.concept === key));
+  document.querySelectorAll(".product-panel").forEach((item) => item.classList.toggle("selected-direction", item.dataset.concept === key));
+  const card = document.querySelector(".radar-card");
+  if (card) {
+    card.dataset.activeConcept = key;
+    card.style.setProperty("--accent", data.color);
+  }
+  document.querySelector(".selection-gallery")?.style.setProperty("--accent", data.color);
+  const shape = document.querySelector("#radar-shape");
+  if (shape) shape.setAttribute("points", radarPoints(data.values));
+  const benchmark = document.querySelector("#radar-benchmark");
+  if (benchmark) benchmark.setAttribute("points", radarPoints(data.judge));
+  const internal = document.querySelector("#radar-internal");
+  if (internal) internal.setAttribute("points", radarPoints(data.internal));
+  document.querySelector("#recommendation-title").textContent = data.title;
+  document.querySelector("#recommendation-copy").textContent = data.copy;
+  document.querySelector("#recommendation-score").textContent = `${conceptAliases[key]} 推薦指數 ${data.score}/100`;
+  const avgGap = Math.round(data.values.reduce((total, value, index) => total + Math.abs(value - data.internal[index]), 0) / data.values.length);
+  const narrative = document.querySelector("#radar-narrative");
+  if (narrative) {
+    if (avgGap < 6) {
+      narrative.textContent = "你的方向與雄獅內部資源評估高度一致，代表這個方向不只好看，也比較容易被實際推出。";
+    } else if (avgGap < 11) {
+      narrative.textContent = "你的方向和內部評估有些微差異：市場吸引力很清楚，但仍需要用資源配置與服務設計補強。";
+    } else {
+      narrative.textContent = "你的方向和內部評估存在落差，適合進一步討論：它是品牌加分機會，還是執行成本過高的想像？";
+    }
+  }
+  const diffChart = document.querySelector("#radar-diff-chart");
+  if (diffChart) {
+    const labels = ["需求", "清楚度", "差異化", "資源", "毛利", "擴張"];
+    diffChart.innerHTML = data.values.map((value, index) => {
+      const diff = Math.round(value - data.internal[index]);
+      const width = Math.min(100, Math.abs(diff) * 9 + 16);
+      return `<div class="diff-item"><span>${labels[index]}</span><b>${diff >= 0 ? "+" : ""}${diff}</b><i style="--fill:${width}%"></i></div>`;
+    }).join("");
+  }
+  document.querySelectorAll(".score-grid [data-score]").forEach((item, index) => {
+    const score = data.scores[index] ?? data.values[index % data.values.length];
+    item.style.setProperty("--score", `${score}%`);
+    item.classList.toggle("hot", score >= 84);
+    item.querySelector("b").textContent = `${score}/100`;
+  });
+  document.body.dataset.activeConcept = key;
+  updateJudgeSummary();
+}
+
+function updateAlignmentHints(decisionLabel) {
+  const key = alignmentMap[decisionLabel];
+  document.querySelectorAll(".product-panel").forEach((card) => {
+    const strength = card.dataset[`alignmentTo${key ? key[0].toUpperCase() + key.slice(1) : ""}`] || "medium";
+    const aligned = strength === "high";
+    card.classList.toggle("judge-aligned", aligned);
+    const hint = card.querySelector(".alignment-hint");
+    if (hint) {
+      hint.hidden = !aligned;
+      const note = hint.querySelector(".hint-strength");
+      if (note) note.textContent = aligned ? `✓ 高度符合你的判斷（${window.judgeProfile.challengeTitle}）` : "符合度中等";
+    }
+  });
+}
+
+function updateOrg(key) {
+  const data = orgData[key];
+  if (!data) return;
+  document.querySelectorAll(".org-node").forEach((node) => node.classList.toggle("active", node.dataset.org === key));
+  document.querySelector("#org-kicker").textContent = data.kicker;
+  document.querySelector("#org-title").textContent = data.title;
+  document.querySelector("#org-copy").textContent = data.copy;
+  document.querySelector("#org-tags").innerHTML = data.tags.map((tag) => `<b>${tag}</b>`).join("");
+}
+
+function updateBusinessConsole() {
+  const travelers = Number(document.querySelector("#traveler-count")?.value || 24);
+  const days = Number(document.querySelector("#travel-days")?.value || 7);
+  const revenue = Math.round(travelers * days * 510);
+  const margin = Math.min(38, Math.round(21 + travelers / 5 + (days - 4) * 0.8));
+  const leads = Math.round(travelers * 1.35 + days * 1.5);
+  document.querySelector("#kpi-revenue").textContent = `$${Math.round(revenue / 1000)}K`;
+  document.querySelector("#kpi-margin").textContent = `${margin}%`;
+  document.querySelector("#kpi-leads").textContent = leads;
+  document.querySelector("#traveler-value").textContent = travelers;
+  document.querySelector("#days-value").textContent = days;
+  window.judgeProfile.travelers = travelers;
+  window.judgeProfile.days = days;
+  const story = document.querySelector("#business-story");
+  const storyKey = document.querySelector("#story-key");
+  if (story) {
+    if (travelers <= 18 && days <= 5) {
+      story.textContent = "保守方案：先用小團測試產品語言，成本結構清楚，但規模效益有限。";
+      window.judgeProfile.model = "品質導向";
+      if (storyKey) storyKey.textContent = `${travelers} 人 × ${days} 天 = 品質驗證`;
+    } else if (travelers >= 30 && days <= 7) {
+      story.textContent = "規模方案：人數拉高後固定成本被攤薄，毛利開始上升，但需要更強銷售漏斗。";
+      window.judgeProfile.model = "規模導向";
+      if (storyKey) storyKey.textContent = `${travelers} 人 × ${days} 天 = 規模效益`;
+    } else if (days >= 9) {
+      story.textContent = "高端方案：天數增加讓客單價拉高，適合加入顧問服務、加購體驗與企業客製。";
+      window.judgeProfile.model = "高端深度導向";
+      if (storyKey) storyKey.textContent = `${travelers} 人 × ${days} 天 = 高端深度`;
+    } else {
+      story.textContent = "平衡方案：保留可銷售價格，同時讓服務細節足以支撐品牌溢價。";
+      window.judgeProfile.model = "平衡導向";
+      if (storyKey) storyKey.textContent = `${travelers} 人 × ${days} 天 = 平衡驗證`;
+    }
+  }
+  document.querySelector(".business-console")?.style.setProperty("--business-progress", `${Math.min(100, margin * 2.3)}%`);
+  updateJudgeSummary();
+}
+
+function updateJudgeSummary() {
+  const profile = window.judgeProfile || {};
+  const challenge = document.querySelector("#summary-challenge");
+  const challengeContext = document.querySelector("#summary-challenge-context");
+  const product = document.querySelector("#summary-product");
+  const productReason = document.querySelector("#summary-product-reason");
+  const model = document.querySelector("#summary-model");
+  const modelDetail = document.querySelector("#summary-model-detail");
+  const meter = document.querySelector("#summary-meter");
+  const alignment = document.querySelector("#summary-alignment");
+  const timelineChallenge = document.querySelector("#timeline-challenge");
+  const timelineProduct = document.querySelector("#timeline-product");
+  const timelineModel = document.querySelector("#timeline-model");
+  const alignmentCircle = document.querySelector("#alignment-circle");
+  const ringValue = document.querySelector("#alignment-ring-value");
+  const alignmentText = document.querySelector("#alignment-text");
+  if (!challenge || !product || !model) return;
+  challenge.textContent = profile.challengeTitle || "尚未選擇";
+  challengeContext.textContent = profile.challenge ? challengeCopy[profile.challenge] : "從前面的 Decision Path 開始，選擇會被帶入後續判斷。";
+  product.textContent = profile.preferredProduct || "尚未選擇";
+  const rec = recommendationData[profile.preferredKey || "edu"];
+  productReason.textContent = rec ? rec.copy : "基於你在產品評估矩陣中的互動，這裡會顯示目前最被你關注的方向。";
+  model.textContent = profile.model || "平衡導向";
+  modelDetail.textContent = `目前假設為 ${profile.travelers || 24} 人 × ${profile.days || 7} 天，這會影響成本攤提、毛利與銷售難度。`;
+  const base = rec?.score || 78;
+  const bonus = profile.challenge ? 6 : 0;
+  const fit = Math.min(96, Math.max(62, Math.round(base * 0.78 + bonus + (profile.travelers || 24) / 8)));
+  meter?.style.setProperty("--fill", `${fit}%`);
+  if (alignment) alignment.textContent = `${fit}% 一致`;
+  if (timelineChallenge) timelineChallenge.textContent = profile.challengeTitle || "尚未選擇";
+  if (timelineProduct) timelineProduct.textContent = profile.preferredProduct || "Direction A";
+  if (timelineModel) timelineModel.textContent = `${profile.travelers || 24} 人 × ${profile.days || 7} 天`;
+  if (alignmentCircle) {
+    const circumference = 2 * Math.PI * 88;
+    alignmentCircle.style.strokeDasharray = `${circumference}`;
+    alignmentCircle.style.strokeDashoffset = `${circumference * (1 - fit / 100)}`;
+  }
+  if (ringValue) ringValue.innerHTML = `${fit}%<small>一致度</small>`;
+  if (alignmentText) alignmentText.textContent = fit >= 82 ? "你的判斷與我們的內部評估高度對齊，尤其在客群分眾與可執行性上。" : "你的判斷和內部評估有些差異，這正好可以成為現場討論的策略焦點。";
+}
+
+function setJudgeTheme(choice, color) {
+  const activeColor = color || judgeColorMap[choice] || "#d0ad6b";
+  root.style.setProperty("--judge-color", activeColor);
+  root.style.setProperty("--judge-color-soft", `${activeColor}22`);
+  document.querySelector("#decision-board")?.setAttribute("data-judge-choice", (choice || "none").toLowerCase());
+  const beacon = document.querySelector("#judge-beacon");
+  if (beacon) {
+    beacon.style.setProperty("--judge-color", activeColor);
+    beacon.hidden = true;
+  }
 }
 
 function handleScroll() {
@@ -660,14 +1111,16 @@ function createAmbientMusic() {
 
 function setMusicState(active) {
   if (!musicToggle) return;
-  if (active && !musicNodes) {
-    musicNodes = createAmbientMusic();
-    audioContext = musicNodes?.context;
+  if (backgroundTrack) {
+    backgroundTrack.volume = 0.42;
+    if (active) {
+      backgroundTrack.play().catch(() => {
+        musicToggle.querySelector("b").textContent = "Tap";
+      });
+    } else {
+      backgroundTrack.pause();
+    }
   }
-  if (!musicNodes) return;
-  if (audioContext.state === "suspended") audioContext.resume();
-  musicNodes.master.gain.cancelScheduledValues(audioContext.currentTime);
-  musicNodes.master.gain.linearRampToValueAtTime(active ? 0.22 : 0.0001, audioContext.currentTime + 0.8);
   musicToggle.classList.toggle("active", active);
   musicToggle.setAttribute("aria-pressed", active ? "true" : "false");
   musicToggle.querySelector("b").textContent = active ? "On" : "Off";
@@ -712,6 +1165,73 @@ const networkData = {
   }
 };
 
+const rideJourneyData = {
+  1: {
+    mode: "Rail / Welcome",
+    title: "Day 1｜台北",
+    taste: "Taste Anchor：Gonna+ Welcome Table",
+    highlights: "Highlights：抵達、行前說明、台北城市印象"
+  },
+  2: {
+    mode: "Bike 15–25km + Rail",
+    title: "Day 2｜宜蘭",
+    taste: "Taste Anchor：蔥餅、在地小吃、海味",
+    highlights: "Highlights：蘭陽平原、田園風光、頭城／礁溪散策"
+  },
+  3: {
+    mode: "Bike 20–35km + Rail",
+    title: "Day 3｜花蓮",
+    taste: "Taste Anchor：原民風味、石板料理、野菜",
+    highlights: "Highlights：七星潭、東海岸、花蓮文創、市集"
+  },
+  4: {
+    mode: "Bike 20–30km + Rail",
+    title: "Day 4｜池上 / 關山",
+    taste: "Taste Anchor：池上米食、便當、米點心",
+    highlights: "Highlights：伯朗大道、稻田、米鄉文化、小鎮探索"
+  },
+  5: {
+    mode: "Bike 25–40km + Rail",
+    title: "Day 5｜台東",
+    taste: "Taste Anchor：海鮮、在地咖啡",
+    highlights: "Highlights：都蘭、杉原海岸、東海岸風景"
+  },
+  6: {
+    mode: "Rail Mode",
+    title: "Day 6｜南迴 / 高雄",
+    taste: "Taste Anchor：港都風味、海鮮、台菜",
+    highlights: "Highlights：南迴景觀、高雄港灣夜景"
+  },
+  7: {
+    mode: "Bike 15–25km",
+    title: "Day 7｜高雄",
+    taste: "Taste Anchor：Farewell Table",
+    highlights: "Highlights：愛河、港區輕騎、駁二、哈瑪星、眷村文化"
+  },
+  8: {
+    mode: "Rail / Extension",
+    title: "Day 8｜台北或延伸",
+    taste: "Taste Anchor：旅程結尾早餐、在地好味",
+    highlights: "Highlights：Travel Credit、Ride Passport、旅後 CRM 啟動"
+  }
+};
+
+function updateRideJourney(day) {
+  const data = rideJourneyData[day];
+  if (!data) return;
+  document.querySelectorAll(".journey-days button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.day === String(day));
+  });
+  const mode = document.querySelector("#journey-mode");
+  const title = document.querySelector("#journey-title");
+  const taste = document.querySelector("#journey-taste");
+  const highlights = document.querySelector("#journey-highlights");
+  if (mode) mode.textContent = data.mode;
+  if (title) title.textContent = data.title;
+  if (taste) taste.textContent = data.taste;
+  if (highlights) highlights.textContent = data.highlights;
+}
+
 function updateNetworkCard(key) {
   const data = networkData[key];
   if (!data) return;
@@ -726,12 +1246,22 @@ function updateNetworkCard(key) {
   document.querySelectorAll(".map-node").forEach((node) => node.classList.toggle("active", node.classList.contains(key)));
 }
 
-enterSite.addEventListener("click", () => {
-  coldOpen.classList.add("hidden");
+function releaseIntro() {
+  document.body.classList.remove("intro-active");
+  document.body.classList.add("entered");
+}
+
+enterSite?.addEventListener("click", () => {
+  coldOpen.classList.add("entering");
+  setTimeout(() => {
+    coldOpen.classList.add("hidden");
+    releaseIntro();
+  }, 680);
 });
 
 skipIntro?.addEventListener("click", () => {
   coldOpen.classList.add("hidden");
+  releaseIntro();
 });
 
 sessionStorage.removeItem("proposalEntered");
@@ -746,15 +1276,120 @@ document.querySelectorAll(".map-node").forEach((node) => {
   node.addEventListener("click", () => updateNetworkCard(key));
   node.addEventListener("mouseenter", () => updateNetworkCard(key));
 });
+document.querySelectorAll(".journey-days button").forEach((button) => {
+  button.addEventListener("click", () => updateRideJourney(button.dataset.day));
+});
 document.querySelectorAll(".orbit").forEach((button) => button.addEventListener("click", () => updateOrbit(button.dataset.orbit)));
 document.querySelectorAll(".collection-tabs button").forEach((button) => {
+  button.addEventListener("click", () => updateRecommendation(button.dataset.concept));
+});
+document.querySelectorAll(".decision-board button").forEach((button) => {
   button.addEventListener("click", () => {
-    document.querySelectorAll(".collection-tabs button").forEach((item) => item.classList.remove("active"));
+    document.querySelectorAll(".decision-board button").forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
-    const [title, copy] = recommendationData[button.dataset.concept];
-    document.querySelector("#recommendation-title").textContent = title;
-    document.querySelector("#recommendation-copy").textContent = copy;
+    window.judgeProfile.challenge = button.dataset.decisionLabel || "";
+    window.judgeProfile.challengeTitle = button.dataset.decisionTitle || button.textContent.trim();
+    setJudgeTheme(window.judgeProfile.challenge, button.dataset.decisionColor);
+    document.querySelector("#judge-choice").textContent = window.judgeProfile.challengeTitle;
+    const feedback = document.querySelector("#decision-feedback");
+    if (feedback) feedback.hidden = false;
+    updateAlignmentHints(window.judgeProfile.challenge);
+    updateJudgeSummary();
+    const target = document.querySelector(button.dataset.decision);
+    setTimeout(() => {
+      document.querySelectorAll(".judge-highlighted").forEach((node) => node.classList.remove("judge-highlighted"));
+      target?.classList.add("judge-highlighted");
+      target?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 800);
   });
+});
+document.querySelectorAll(".org-node").forEach((node) => {
+  node.addEventListener("click", () => updateOrg(node.dataset.org));
+  node.addEventListener("mouseenter", () => updateOrg(node.dataset.org));
+});
+document.querySelectorAll(".product-panel button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const panel = button.closest(".product-panel");
+    panel?.classList.toggle("expanded");
+    if (panel?.dataset.concept) updateRecommendation(panel.dataset.concept);
+  });
+});
+document.querySelectorAll(".product-panel").forEach((panel) => {
+  panel.addEventListener("mouseenter", () => {
+    if (panel.dataset.concept) updateRecommendation(panel.dataset.concept);
+  });
+});
+document.querySelectorAll(".quiz-options button").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".quiz-options button").forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    const [title, copy] = quizData[button.dataset.quiz];
+    document.querySelector("#quiz-title").textContent = title;
+    document.querySelector("#quiz-copy").textContent = copy;
+  });
+});
+document.querySelectorAll("#traveler-count, #travel-days").forEach((input) => input.addEventListener("input", updateBusinessConsole));
+document.querySelectorAll(".team-grid article").forEach((card) => {
+  card.addEventListener("click", () => {
+    document.querySelectorAll(".team-grid article").forEach((item) => item.classList.remove("active"));
+    card.classList.add("active");
+    openTeamDossier(card);
+  });
+});
+
+function openTeamDossier(card) {
+  const profile = teamProfiles[card.dataset.teamName] || {};
+  const img = card.querySelector("img");
+  const name = profile.name || card.dataset.teamName || "";
+  const focus = card.dataset.teamFocus || "";
+  document.querySelector("#dossier-img").src = img?.getAttribute("src") || "";
+  document.querySelector("#dossier-img").alt = name;
+  document.querySelector("#dossier-unit").textContent = card.dataset.teamUnit || "";
+  document.querySelector("#dossier-name").textContent = name;
+  document.querySelector("#dossier-english").textContent = profile.english || card.dataset.teamRole || "";
+  document.querySelector("#dossier-nationality").textContent = profile.nationality || "團隊成員";
+  document.querySelector("#dossier-birthday").textContent = profile.birthday || "詳情待補";
+  document.querySelector("#dossier-school").textContent = card.dataset.teamSchool || "";
+  document.querySelector("#dossier-about").textContent = profile.about || card.dataset.teamDetail || "";
+  document.querySelector("#dossier-expectation").textContent = profile.expectation || "希望透過這次提案，把自己的專業與團隊合作能力投入真實旅遊產業情境，學習如何把創意整理成能被執行、被展示、被採用的企劃。";
+  document.querySelector("#dossier-language").textContent = profile.language || "依組員資料補充";
+  document.querySelector("#dossier-specialty").textContent = profile.specialty || focus.split("/").map((item) => `# ${item.trim()}`).join(" ");
+  document.querySelector("#dossier-contact").innerHTML = (profile.contact || [card.dataset.teamRole || "Project Contribution"]).map((item) => `<span>${item}</span>`).join("");
+  document.querySelector("#dossier-experience").innerHTML = (profile.experience || [
+    [card.dataset.teamRole || "專案角色", card.dataset.teamDetail || "負責依自身專長支援提案研究、內容整理、視覺呈現或商業推進，協助團隊把北美雄獅提案做成更完整的決賽展示。", ""],
+    ["專案貢獻", `核心能力：${focus || "團隊協作 / 專案執行 / 跨域溝通"}`, ""]
+  ]).map(([title, text, year]) => `<article><b>${title}</b><p>${text}</p><small>${year}</small></article>`).join("");
+  const dossier = document.querySelector(".team-dossier");
+  const memberColor = getComputedStyle(card).getPropertyValue("--member-color").trim();
+  if (memberColor) dossier?.style.setProperty("--dossier-color", memberColor);
+  dossier?.classList.add("open");
+  dossier?.setAttribute("aria-hidden", "false");
+  document.body.classList.add("dossier-open");
+}
+
+window.openTeamDossier = openTeamDossier;
+
+function closeTeamDossier() {
+  const dossier = document.querySelector(".team-dossier");
+  dossier?.classList.remove("open");
+  dossier?.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("dossier-open");
+}
+
+document.querySelector(".team-dossier-close")?.addEventListener("click", closeTeamDossier);
+document.querySelector(".team-dossier")?.addEventListener("click", (event) => {
+  if (event.target.classList.contains("team-dossier")) closeTeamDossier();
+});
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeTeamDossier();
+});
+
+document.querySelector("#team")?.addEventListener("click", (event) => {
+  const card = event.target.closest(".team-grid article");
+  if (!card) return;
+  document.querySelectorAll(".team-grid article").forEach((item) => item.classList.remove("active"));
+  card.classList.add("active");
+  openTeamDossier(card);
 });
 
 const revealObserver = new IntersectionObserver(
@@ -773,3 +1408,209 @@ document.querySelectorAll(".reveal").forEach((node) => revealObserver.observe(no
 window.addEventListener("scroll", handleScroll, { passive: true });
 handleScroll();
 setLanguage(activeLang);
+updateRecommendation("edu");
+updateBusinessConsole();
+
+const journeyStations = [
+  ["hero", "ST-01", "Main Arrival"],
+  ["why-product", "ST-02", "Why Product"],
+  ["why-taiwan-clean", "ST-03", "Why Taiwan"],
+  ["why-lion", "ST-04", "Lion Capability"],
+  ["foundation-clean", "ST-05", "Lion 1.0"],
+  ["architecture-clean", "ST-06", "Architecture"],
+  ["safety-clean", "ST-07", "Safety System"],
+  ["journey-clean", "ST-08", "8-Day Journey"],
+  ["market-clean", "ST-09", "Market Insight"],
+  ["competitor-clean", "ST-10", "Competitors"],
+  ["gtm-clean", "ST-11", "Go-to-Market"],
+  ["crm-clean", "ST-12", "CRM Flywheel"],
+  ["business-clean", "ST-13", "Business Model"],
+  ["risk-clean", "ST-14", "Risk Response"],
+  ["roadmap-clean", "ST-15", "Roadmap"],
+  ["team", "ST-16", "Team"],
+  ["final-pitch-clean", "ST-17", "Final Arrival"]
+].filter(([id]) => document.getElementById(id));
+
+function installJourneyRailSystem() {
+  if (!journeyStations.length || document.querySelector(".journey-rail-map")) return;
+
+  const rail = document.createElement("aside");
+  rail.className = "journey-rail-map";
+  rail.setAttribute("aria-label", "Journey progress map");
+  rail.innerHTML = `
+    <div class="journey-rail-head">
+      <span>Route</span>
+      <b id="journey-current-code">${journeyStations[0][1]}</b>
+    </div>
+    <div class="journey-rail-track" aria-hidden="true"><i id="journey-progress-line"></i></div>
+    <nav class="journey-rail-stations">
+      ${journeyStations.map(([id, code, label], index) => `
+        <a href="#${id}" data-station-id="${id}" data-station-index="${index}">
+          <span>${code}</span><b>${label}</b>
+        </a>
+      `).join("")}
+    </nav>
+  `;
+  document.body.appendChild(rail);
+
+  const toast = document.createElement("div");
+  toast.className = "station-arrival";
+  toast.innerHTML = `<span>ARRIVING</span><b>${journeyStations[0][2]}</b>`;
+  document.body.appendChild(toast);
+
+  journeyStations.forEach(([id, code, label]) => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    section.classList.add("journey-station");
+    section.dataset.stationCode = code;
+    section.dataset.stationLabel = label;
+    if (!section.querySelector(":scope > .station-chip")) {
+      const chip = document.createElement("div");
+      chip.className = "station-chip";
+      chip.innerHTML = `<span>${code}</span><b>${label}</b>`;
+      section.prepend(chip);
+    }
+  });
+}
+
+function updateJourneyRailSystem() {
+  if (!journeyStations.length) return;
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const pageProgress = docHeight > 0 ? Math.min(1, Math.max(0, scrollTop / docHeight)) : 0;
+  document.documentElement.style.setProperty("--journey-progress", pageProgress.toFixed(4));
+
+  let activeIndex = 0;
+  journeyStations.forEach(([id], index) => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    if (section.getBoundingClientRect().top <= window.innerHeight * 0.46) activeIndex = index;
+  });
+
+  const [activeId, activeCode, activeLabel] = journeyStations[activeIndex];
+  document.body.dataset.activeStation = activeId;
+  document.querySelector("#journey-current-code") && (document.querySelector("#journey-current-code").textContent = activeCode);
+  document.querySelector("#journey-progress-line")?.style.setProperty("--rail-progress", `${(activeIndex / Math.max(1, journeyStations.length - 1)) * 100}%`);
+
+  document.querySelectorAll(".journey-rail-stations a").forEach((node) => {
+    const index = Number(node.dataset.stationIndex);
+    node.classList.toggle("active", index === activeIndex);
+    node.classList.toggle("passed", index < activeIndex);
+  });
+
+  const toast = document.querySelector(".station-arrival");
+  if (toast && toast.dataset.activeStation !== activeId) {
+    toast.dataset.activeStation = activeId;
+    toast.innerHTML = `<span>ARRIVING</span><b>${activeCode} / ${activeLabel}</b>`;
+    toast.classList.remove("show");
+    requestAnimationFrame(() => {
+      toast.classList.add("show");
+      window.clearTimeout(window.stationArrivalTimer);
+      window.stationArrivalTimer = window.setTimeout(() => toast.classList.remove("show"), 1500);
+    });
+  }
+}
+
+if (!document.querySelector(".ref-site")) {
+  installJourneyRailSystem();
+  updateJourneyRailSystem();
+  window.addEventListener("scroll", updateJourneyRailSystem, { passive: true });
+  window.addEventListener("resize", updateJourneyRailSystem);
+}
+
+
+/* Exact reference interactions imported from user reference: reveal, counters, parallax and hover states. */
+(() => {
+  const revealEls = document.querySelectorAll('.reveal-up, .reveal-blur');
+  if ('IntersectionObserver' in window) {
+    const revealIO = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-inview');
+          revealIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el) => revealIO.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('is-inview'));
+  }
+
+  const counters = document.querySelectorAll('.counter');
+  if ('IntersectionObserver' in window) {
+    const counterIO = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target || '0', 10);
+        const start = performance.now();
+        const dur = 2000;
+        function step(now) {
+          const p = Math.min((now - start) / dur, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(eased * target).toLocaleString();
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        counterIO.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    counters.forEach((el) => counterIO.observe(el));
+  }
+
+  const textLeft = document.getElementById('text-left');
+  const textRight = document.getElementById('text-right');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced) {
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY || document.documentElement.scrollTop;
+      if (y < window.innerHeight * 1.1) {
+        if (textLeft) textLeft.style.transform = `translateX(calc(-10vw + ${y * 0.18}px))`;
+        if (textRight) textRight.style.transform = `translateX(calc(-10vw - ${y * 0.18}px))`;
+      }
+    }, { passive: true });
+  }
+
+  const interactiveRows = document.querySelectorAll('.interactive-row[data-bg]');
+  const bgLayers = document.querySelectorAll('.bg-layer');
+  interactiveRows.forEach((row) => {
+    row.addEventListener('mouseenter', () => {
+      const targetId = row.dataset.bg;
+      bgLayers.forEach((layer) => layer.classList.remove('active'));
+      const target = document.getElementById(targetId);
+      if (target) target.classList.add('active');
+    });
+    row.addEventListener('mouseleave', () => {
+      bgLayers.forEach((layer) => layer.classList.remove('active'));
+      const fallback = document.getElementById('bg-default');
+      if (fallback) fallback.classList.add('active');
+    });
+  });
+
+  if (!prefersReduced) {
+    const parallaxBgs = document.querySelectorAll('.parallax-bg');
+    window.addEventListener('scroll', () => {
+      parallaxBgs.forEach((bg) => {
+        const section = bg.closest('.parallax-section');
+        if (!section) return;
+        const rect = section.getBoundingClientRect();
+        const vh = window.innerHeight;
+        if (rect.bottom < 0 || rect.top > vh) return;
+        const progress = (vh - rect.top) / (vh + rect.height);
+        const speed = parseFloat(bg.dataset.speed || '0.15');
+        bg.style.transform = `translateY(${(progress - 0.5) * speed * 100}%)`;
+      });
+    }, { passive: true });
+  }
+
+  document.querySelectorAll('.rev-panel').forEach((panel) => {
+    panel.setAttribute('tabindex', '0');
+    panel.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        panel.style.flex = '3';
+        setTimeout(() => { panel.style.flex = ''; }, 1200);
+      }
+    });
+  });
+})();
