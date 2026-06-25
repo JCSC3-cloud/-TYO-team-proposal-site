@@ -22022,20 +22022,20 @@ body.montage-ready .m-food3 {
 .montage-text h2 {
   position: absolute !important;
   left: clamp(28px, 6vw, 96px) !important;
-  bottom: clamp(72px, 12vh, 132px) !important;
-  max-width: min(760px, 72vw) !important;
+  bottom: clamp(82px, 13vh, 142px) !important;
+  max-width: min(720px, 68vw) !important;
   margin: 0 !important;
   text-align: left !important;
   white-space: normal !important;
-  color: rgba(255,245,229,.95) !important;
+  color: rgba(255,245,229,.92) !important;
   font-family: "Noto Serif TC", Georgia, serif !important;
-  font-weight: 600 !important;
-  line-height: 1.35 !important;
-  letter-spacing: .03em !important;
-  text-shadow: 0 18px 60px rgba(0,0,0,.82) !important;
+  font-weight: 500 !important;
+  line-height: 1.16 !important;
+  letter-spacing: .015em !important;
+  text-shadow: 0 14px 42px rgba(0,0,0,.78) !important;
   opacity: 0 !important;
-  transform: translateY(22px) !important;
-  filter: blur(8px) !important;
+  transform: translateY(18px) !important;
+  filter: blur(6px) !important;
 }
 
 /* 前面文字：更順，不要全部搶著出 */
@@ -22051,30 +22051,33 @@ body.montage-ready .tx-2 {
 
 /* Rail / Bike / Food 字：衝擊，但不要俗 */
 body.montage-ready .tx-3 {
-  font-family: "Cinzel", serif !important;
-  font-size: clamp(2.8rem, 6vw, 6.8rem) !important;
-  font-weight: 900 !important;
-  letter-spacing: .18em !important;
-  color: #ffd28a !important;
-  animation: impactWord 1s cubic-bezier(.12,.82,.16,1) 3.05s forwards !important;
+  font-family: "Cinzel", "Noto Serif TC", serif !important;
+  font-size: clamp(1.9rem, 3.6vw, 4.2rem) !important;
+  font-weight: 650 !important;
+  letter-spacing: .035em !important;
+  line-height: 1.12 !important;
+  color: rgba(255,245,229,.92) !important;
+  animation: softLineInOut 1.55s ease 3.05s forwards !important;
 }
 
 body.montage-ready .tx-4 {
-  font-family: "Cinzel", serif !important;
-  font-size: clamp(2.8rem, 6vw, 6.8rem) !important;
-  font-weight: 900 !important;
-  letter-spacing: .18em !important;
-  color: #fff5e5 !important;
-  animation: impactWord 1s cubic-bezier(.12,.82,.16,1) 4.25s forwards !important;
+  font-family: "Cinzel", "Noto Serif TC", serif !important;
+  font-size: clamp(1.9rem, 3.6vw, 4.2rem) !important;
+  font-weight: 650 !important;
+  letter-spacing: .035em !important;
+  line-height: 1.12 !important;
+  color: rgba(255,245,229,.92) !important;
+  animation: softLineInOut 1.55s ease 4.25s forwards !important;
 }
 
 body.montage-ready .tx-5 {
-  font-family: "Cinzel", serif !important;
-  font-size: clamp(2.8rem, 6vw, 6.8rem) !important;
-  font-weight: 900 !important;
-  letter-spacing: .18em !important;
-  color: #ffd28a !important;
-  animation: impactWord 1s cubic-bezier(.12,.82,.16,1) 5.25s forwards !important;
+  font-family: "Cinzel", "Noto Serif TC", serif !important;
+  font-size: clamp(1.9rem, 3.6vw, 4.2rem) !important;
+  font-weight: 650 !important;
+  letter-spacing: .035em !important;
+  line-height: 1.12 !important;
+  color: rgba(255,245,229,.92) !important;
+  animation: softLineInOut 1.55s ease 5.45s forwards !important;
 }
 
 /* tx-6 不再用，因為我們改用 final-journey-line */
@@ -24127,4 +24130,912 @@ body.montage-ready #cold-open #enter-journey {
   .why-buy-grid {
     grid-template-columns: 1fr;
   }
+}
+/* =========================================================
+   MOBILE RESPONSIVE FIX — LION RIDE & TASTE
+   Paste at the VERY BOTTOM of styles.css
+========================================================= */
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    font-size: 15px !important;
+  }
+
+  /* ===== Header ===== */
+  header,
+  .site-header {
+    height: 64px !important;
+    padding: 0 .9rem !important;
+    backdrop-filter: blur(18px) !important;
+  }
+
+  header nav,
+  .site-header nav,
+  header .hidden,
+  .site-header .hidden {
+    display: none !important;
+  }
+
+  header img,
+  .site-header img {
+    max-height: 38px !important;
+  }
+
+  header h1,
+  .site-header h1 {
+    font-size: .78rem !important;
+    letter-spacing: .08em !important;
+    line-height: 1.1 !important;
+  }
+
+  header p,
+  .site-header p {
+    font-size: .55rem !important;
+    letter-spacing: .16em !important;
+  }
+
+  /* ===== General spacing ===== */
+  section {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+  }
+
+  .section-kicker {
+    font-size: .68rem !important;
+    letter-spacing: .2em !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .huge-title,
+  .mega-title,
+  section h2 {
+    font-size: clamp(2.15rem, 13vw, 3.35rem) !important;
+    line-height: .98 !important;
+    letter-spacing: -.035em !important;
+  }
+
+  section p {
+    font-size: .92rem !important;
+    line-height: 1.75 !important;
+  }
+
+  /* ===== Hero 首屏 ===== */
+  #hero,
+  #home,
+  section:first-of-type {
+    min-height: 100svh !important;
+    padding: 5.8rem 1.15rem 3.2rem !important;
+  }
+
+  #hero h1,
+  #home h1,
+  main > section:first-of-type h1 {
+    font-size: clamp(3rem, 17vw, 4.8rem) !important;
+    line-height: .92 !important;
+    letter-spacing: -.05em !important;
+    max-width: 100% !important;
+  }
+
+  #hero p,
+  #home p,
+  main > section:first-of-type p {
+    max-width: 92vw !important;
+  }
+
+  .hero-proof-line {
+    gap: .45rem !important;
+    margin: .85rem auto 1.15rem !important;
+  }
+
+  .hero-proof-line span {
+    font-size: .68rem !important;
+    padding: .36rem .62rem !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+    gap: .75rem !important;
+    width: 100% !important;
+  }
+
+  .btn-gold,
+  .btn-outline,
+  .hero-actions a {
+    width: min(100%, 320px) !important;
+    text-align: center !important;
+    padding: .95rem 1rem !important;
+    font-size: .78rem !important;
+    letter-spacing: .12em !important;
+  }
+
+  /* 不要讓 scroll 字卡在手機 */
+  .scroll-indicator,
+  [class*="scroll"],
+  [style*="SCROLL"] {
+    display: none !important;
+  }
+
+  /* ===== Why Buy / What Makes Different ===== */
+  #why-buy {
+    padding: 4.8rem 1.15rem !important;
+  }
+
+  #why-buy > div > div:nth-child(2) {
+    display: block !important;
+    margin-bottom: 2rem !important;
+  }
+
+  #why-buy h2 {
+    font-size: clamp(2.7rem, 16vw, 4.1rem) !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  #why-buy p {
+    max-width: 100% !important;
+    padding-bottom: 0 !important;
+  }
+
+  #why-buy div[style*="grid-template-columns:repeat(3"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  #why-buy article {
+    min-height: auto !important;
+    padding: 1.55rem !important;
+  }
+
+  #why-buy article > div:first-child {
+    font-size: 3rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  #why-buy h3 {
+    font-size: 1.35rem !important;
+  }
+
+  /* ===== Product Promise ===== */
+  #product-promise {
+    padding: 4.6rem 1.15rem !important;
+  }
+
+  .promise-row-inner {
+    display: block !important;
+    padding: 2rem 0 !important;
+  }
+
+  .promise-num {
+    font-size: 2.8rem !important;
+    margin-bottom: .5rem !important;
+  }
+
+  .promise-title {
+    font-size: clamp(2rem, 12vw, 3rem) !important;
+    line-height: .95 !important;
+    margin-bottom: .8rem !important;
+  }
+
+  .promise-row p,
+  .promise-desc {
+    max-width: 100% !important;
+    font-size: .92rem !important;
+  }
+
+  /* ===== Travelogue cards ===== */
+  #travelogue {
+    padding: 4.8rem 1.15rem !important;
+  }
+
+  #travelogue h2 {
+    font-size: clamp(2.2rem, 12vw, 3.3rem) !important;
+    line-height: .96 !important;
+  }
+
+  #travelogue div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  #travelogue article {
+    min-height: 420px !important;
+  }
+
+  /* ===== 8-Day Journey ===== */
+  #journey {
+    padding: 4.8rem 1rem !important;
+  }
+
+  #journey > div,
+  #journey .max-w-\[88rem\],
+  #journey .max-w-\[1500px\] {
+    max-width: 100% !important;
+  }
+
+  /* 左邊 timeline 變成橫向滑動 */
+  #new-day-nav,
+  #journey .day-nav,
+  #journey aside {
+    position: relative !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    overflow-x: auto !important;
+    gap: .75rem !important;
+    padding: .5rem 0 1rem !important;
+    margin-bottom: 1.2rem !important;
+    scrollbar-width: none !important;
+  }
+
+  #new-day-nav::-webkit-scrollbar,
+  #journey .day-nav::-webkit-scrollbar,
+  #journey aside::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  #journey .day-tab,
+  #journey .day-node {
+    flex: 0 0 auto !important;
+    min-width: 120px !important;
+    padding: .75rem .8rem !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    border-radius: 999px !important;
+    background: rgba(255,255,255,.04) !important;
+    transform: none !important;
+  }
+
+  #journey .day-tab > div:first-child,
+  #journey .node-dot {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: .75rem !important;
+  }
+
+  #journey .day-tab h4,
+  #journey .day-node h4 {
+    font-size: .78rem !important;
+    white-space: nowrap !important;
+  }
+
+  #journey .day-tab p,
+  #journey .day-node p {
+    display: none !important;
+  }
+
+  #journey .new-day-card > div {
+    min-height: auto !important;
+    border-radius: 20px !important;
+  }
+
+  #journey .new-day-card h3 {
+    font-size: clamp(2.5rem, 14vw, 4rem) !important;
+    line-height: .92 !important;
+  }
+
+  #journey .new-day-card p {
+    font-size: .92rem !important;
+  }
+
+  #journey .new-day-card div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: .85rem !important;
+  }
+
+  #journey details {
+    margin-top: 1rem !important;
+  }
+
+  #journey details > div,
+  #journey summary {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* ===== Risk Reversal ===== */
+  #risk-reversal {
+    padding: 4.8rem 1.15rem !important;
+  }
+
+  #risk-reversal div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  #risk-reversal h2 {
+    font-size: clamp(2.7rem, 15vw, 4.2rem) !important;
+  }
+
+  #risk-reversal div[style*="grid-template-columns:78px"] {
+    grid-template-columns: 48px 1fr !important;
+    gap: .8rem !important;
+    padding: 1.2rem 1rem !important;
+  }
+
+  /* ===== What’s Included ===== */
+  #included {
+    padding: 4.8rem 1.15rem !important;
+  }
+
+  #included div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  #included h2 {
+    font-size: clamp(2.7rem, 15vw, 4rem) !important;
+  }
+
+  /* ===== Pricing / Persona ===== */
+  #pricing,
+  #who-for {
+    padding: 4.8rem 1.15rem !important;
+  }
+
+  .pricing-card,
+  .persona-card,
+  .safety-card,
+  .bento-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 1.55rem !important;
+    border-radius: 18px !important;
+  }
+
+  #pricing .flex,
+  #pricing div[style*="display:flex"],
+  #who-for div[style*="grid-template-columns"],
+  #pricing div[style*="grid-template-columns"] {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .pricing-price {
+    font-size: 2.4rem !important;
+  }
+
+  /* ===== Market / competitor tables ===== */
+  .comp-table {
+    min-width: 760px !important;
+  }
+
+  .overflow-x-auto {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* ===== Team ===== */
+  #team {
+    padding: 4.8rem 1.15rem !important;
+  }
+
+  .team-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .character-card {
+    aspect-ratio: 4 / 5 !important;
+    border-radius: 18px !important;
+  }
+
+  /* ===== Part divider ===== */
+  .part-divider {
+    padding: 4.5rem 1.15rem !important;
+  }
+
+  .part-divider h2,
+  .part-divider .huge-title {
+    font-size: clamp(2.4rem, 14vw, 4rem) !important;
+  }
+
+  .part-div-num {
+    font-size: 32vw !important;
+  }
+}
+/* =========================================================
+   MOBILE FIX — 8-DAY JOURNEY SECTION
+   Paste at the VERY BOTTOM of styles.css
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* 整個 8-day 區塊不要左右分欄 */
+  #journey {
+    padding: 4.5rem 1rem !important;
+    overflow: hidden !important;
+  }
+
+  #journey .grid,
+  #journey [class*="grid-cols"],
+  #journey [style*="grid-template-columns"] {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 左邊 timeline 改成手機橫向滑動膠囊 */
+  #journey aside,
+  #journey #new-day-nav,
+  #journey .day-nav {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: .7rem !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: .25rem 0 1rem !important;
+    margin: 0 0 1.25rem !important;
+    border: 0 !important;
+    scrollbar-width: none !important;
+  }
+
+  #journey aside::-webkit-scrollbar,
+  #journey #new-day-nav::-webkit-scrollbar,
+  #journey .day-nav::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* 移除桌機版那條垂直線 */
+  #journey aside::before,
+  #journey #new-day-nav::before,
+  #journey .day-nav::before {
+    display: none !important;
+  }
+
+  /* 每一天按鈕變成膠囊卡 */
+  #journey .day-tab,
+  #journey .day-node {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 116px !important;
+    max-width: 132px !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: .55rem !important;
+    padding: .7rem .8rem !important;
+    border-radius: 999px !important;
+    border: 1px solid rgba(255,255,255,.14) !important;
+    background: rgba(255,255,255,.045) !important;
+    transform: none !important;
+    opacity: .72 !important;
+  }
+
+  #journey .day-tab.active,
+  #journey .day-node.active {
+    opacity: 1 !important;
+    border-color: rgba(224,184,118,.75) !important;
+    background: rgba(224,184,118,.10) !important;
+  }
+
+  #journey .day-tab > div:first-child,
+  #journey .node-dot {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    border-radius: 50% !important;
+    font-size: .78rem !important;
+  }
+
+  #journey .day-tab h4,
+  #journey .day-node h4 {
+    font-size: .78rem !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+  }
+
+  #journey .day-tab p,
+  #journey .day-node p {
+    display: none !important;
+  }
+
+  /* 右邊大卡片手機化 */
+  #journey .new-day-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #journey .new-day-card > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  #journey .new-day-card h3 {
+    font-size: clamp(2.4rem, 14vw, 4rem) !important;
+    line-height: .92 !important;
+    letter-spacing: -.04em !important;
+    word-break: normal !important;
+  }
+
+  #journey .new-day-card p {
+    font-size: .92rem !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Day card 裡的小資訊盒全部變單欄 */
+  #journey .new-day-card [style*="grid-template-columns"],
+  #journey .new-day-card .grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: .85rem !important;
+  }
+
+  #journey .new-day-card [style*="padding"] {
+    max-width: 100% !important;
+  }
+
+  /* View Full Details 手機不要太巨大 */
+  #journey details {
+    width: 100% !important;
+    margin-top: 1rem !important;
+    border-radius: 16px !important;
+  }
+
+  #journey summary {
+    padding: 1rem !important;
+    font-size: .82rem !important;
+  }
+
+  #journey details > div {
+    padding: 1rem !important;
+  }
+
+  #journey details h4,
+  #journey details h3 {
+    font-size: 1rem !important;
+  }
+
+  #journey details li,
+  #journey details p {
+    font-size: .88rem !important;
+    line-height: 1.7 !important;
+  }
+}
+<style>
+  #literary-route {
+    position: relative;
+    padding: 88px 40px 110px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(224,184,118,.08), transparent 32%),
+      linear-gradient(180deg, #040404 0%, #090909 100%);
+    overflow: hidden;
+  }
+
+  #literary-route .lr-wrap {
+    max-width: 1480px;
+    margin: 0 auto;
+  }
+
+  #literary-route .lr-head {
+    max-width: 1040px;
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+
+  #literary-route .lr-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    color: #e0b876;
+    font: 800 0.9rem/1 'Inter', sans-serif;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+
+  #literary-route .lr-kicker::before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 1px;
+    background: rgba(224,184,118,.9);
+  }
+
+  #literary-route .lr-title {
+    margin: 0;
+    color: #f8f4ef;
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: 900;
+    font-size: clamp(2.8rem, 4.3vw, 4.9rem);
+    line-height: 0.96;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  #literary-route .lr-sub {
+    max-width: 760px;
+    margin: 24px auto 0;
+    color: rgba(255,245,229,.58);
+    font: 400 1.08rem/1.65 'Inter', sans-serif;
+  }
+
+  #literary-route .lr-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  #literary-route .lr-card {
+    position: relative;
+    min-height: 560px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.08);
+    background: #111;
+    box-shadow: 0 18px 48px rgba(0,0,0,.24);
+  }
+
+  #literary-route .lr-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.03);
+    filter: brightness(.58) contrast(1.04) saturate(.92);
+    transition: transform .8s cubic-bezier(.16,1,.3,1), filter .8s cubic-bezier(.16,1,.3,1);
+  }
+
+  #literary-route .lr-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0,0,0,.08) 0%,
+      rgba(0,0,0,.26) 40%,
+      rgba(0,0,0,.76) 78%,
+      rgba(0,0,0,.90) 100%
+    );
+    transition: opacity .6s ease;
+  }
+
+  #literary-route .lr-card:hover img {
+    transform: scale(1.06);
+    filter: brightness(.72) contrast(1.05) saturate(.98);
+  }
+
+  #literary-route .lr-card:hover::after {
+    opacity: .92;
+  }
+
+  #literary-route .lr-content {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 28px;
+    z-index: 2;
+  }
+
+  #literary-route .lr-no {
+    margin: 0 0 18px;
+    color: rgba(255,255,255,.24);
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 4.15rem;
+    line-height: .9;
+  }
+
+  #literary-route .lr-card-title {
+    margin: 0 0 8px;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 1.9rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  #literary-route .lr-card-sub {
+    margin: 0;
+    color: #e0b876;
+    font: 700 0.98rem/1.2 'Inter', sans-serif;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+
+  #literary-route .lr-card-desc {
+    margin: 18px 0 0;
+    max-width: 270px;
+    color: rgba(255,245,229,.76);
+    font: 400 0.98rem/1.55 'Inter', sans-serif;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: all .5s ease;
+    pointer-events: none;
+  }
+
+  #literary-route .lr-card:hover .lr-card-desc {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 1200px) {
+    #literary-route .lr-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    #literary-route {
+      padding: 72px 20px 84px;
+    }
+
+    #literary-route .lr-head {
+      margin-bottom: 42px;
+    }
+
+    #literary-route .lr-title {
+      font-size: clamp(2.2rem, 10vw, 3.5rem);
+      line-height: .98;
+    }
+
+    #literary-route .lr-sub {
+      font-size: .98rem;
+    }
+
+    #literary-route .lr-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    #literary-route .lr-card {
+      min-height: 440px;
+      border-radius: 20px;
+    }
+
+    #literary-route .lr-content {
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+    }
+
+    #literary-route .lr-no {
+      font-size: 3.5rem;
+      margin-bottom: 14px;
+    }
+
+    #literary-route .lr-card-title {
+      font-size: 1.65rem;
+    }
+
+    /* 手機不靠 hover，直接顯示說明 */
+    #literary-route .lr-card-desc {
+      opacity: 1;
+      transform: none;
+      margin-top: 14px;
+    }
+  }
+</style>
+/* ══ TRAVELOGUE CARDS ════════════════════════════════════════════════ */
+.travelogue-card {
+  position: relative;
+  height: 420px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: default;
+  border: 1px solid rgba(255,255,255,.05);
+  background: #0a0a0a;
+}
+
+.travelogue-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(60%) brightness(.5);
+  transition: all .8s cubic-bezier(.16,1,.3,1);
+  transform: scale(1.05);
+}
+
+.travelogue-card:hover .travelogue-img {
+  filter: grayscale(0%) brightness(.7);
+  transform: scale(1);
+}
+
+.travelogue-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.9) 0%,
+    rgba(0,0,0,.2) 50%,
+    transparent 100%
+  );
+  transition: opacity .5s;
+}
+
+.travelogue-card:hover .travelogue-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.95) 0%,
+    rgba(0,0,0,.4) 60%,
+    transparent 100%
+  );
+}
+
+.travelogue-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 10;
+}
+
+.travelogue-card:hover .card-desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* === FIX: What You Take Home section spacing === */
+#highlights {
+  position: relative;
+  padding-bottom: clamp(5rem, 8vw, 8rem) !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+
+/* 如果你的新版板塊 id 不是 highlights，而是 take-home，也一起保險處理 */
+#take-home,
+#what-you-take-home {
+  position: relative;
+  padding-bottom: clamp(5rem, 8vw, 8rem) !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+
+/* 圖片矩陣底部不要貼到下一區 */
+.hl-grid,
+.takehome-grid,
+.memory-grid {
+  margin-bottom: clamp(3rem, 5vw, 5rem) !important;
+}
+
+/* Five Senses 不要被上一區吃到 */
+#five-senses {
+  position: relative !important;
+  z-index: 5 !important;
+  clear: both !important;
+  padding-top: clamp(5rem, 8vw, 7rem) !important;
+}
+
+/* 如果你的 Five Senses section id 是 senses，也一起保險 */
+#senses {
+  position: relative !important;
+  z-index: 5 !important;
+  clear: both !important;
+  padding-top: clamp(5rem, 8vw, 7rem) !important;
+}
+#final-cta .cta-btn:focus,
+#final-cta .cta-btn:focus-visible,
+#final-cta .cta-btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+#final-cta .cta-btn.primary:focus,
+#final-cta .cta-btn.primary:focus-visible,
+#final-cta .cta-btn.primary:active {
+  box-shadow: 0 16px 46px rgba(224,184,118,.22);
+}
+
+#final-cta .cta-btn.secondary:focus,
+#final-cta .cta-btn.secondary:focus-visible,
+#final-cta .cta-btn.secondary:active {
+  box-shadow: none;
 }
