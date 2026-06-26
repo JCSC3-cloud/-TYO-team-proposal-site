@@ -8,10 +8,10 @@ const translations = {
     cold6: "",
     cold7: "",
     coldVisual: "Ride the Island. Taste the Culture.",
-    coldTitle: "LION RIDE & TASTE TAIWAN 2.0",
+    coldTitle: "Cycling Taiwan Way",
     coldSub: "Rail × Bike × Food Culture Soft Adventure",
     enterProposal: "進入提案",
-    brandName: "LION RIDE & TASTE TAIWAN 2.0",
+    brandName: "Cycling Taiwan Way",
     brandSub: "Rail × Bike × Food Culture",
     navPosition: "公司定位",
     navDualRole: "雙向角色",
@@ -276,10 +276,10 @@ const translations = {
     cold6: "",
     cold7: "",
     coldVisual: "Ride the Island. Taste the Culture.",
-    coldTitle: "LION RIDE & TASTE TAIWAN 2.0",
+    coldTitle: "Cycling Taiwan Way",
     coldSub: "Rail × Bike × Food Culture Soft Adventure",
     enterProposal: "Enter the Proposal",
-    brandName: "LION RIDE & TASTE TAIWAN 2.0",
+    brandName: "Cycling Taiwan Way",
     brandSub: "Rail × Bike × Food Culture",
     navPosition: "Positioning",
     navDualRole: "Dual Role",
@@ -813,7 +813,7 @@ const teamProfiles = {
 };
 
 const root = document.documentElement;
-const header = document.querySelector(".site-header");
+const header = document.querySelector("#site-header");
 const coldOpen = document.querySelector("#cold-open") || document.querySelector("#intro-v4");
 const enterSite = document.querySelector("#enter-journey") || document.querySelector("#enter-site");
 const skipIntro = document.querySelector("#skip-intro");
